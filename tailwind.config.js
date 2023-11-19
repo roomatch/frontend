@@ -9,7 +9,9 @@ export default {
       colors: {
         'primary': '#04364A',
         'secondary': '#176B87',
-        'third': '#DAFFFB',
+        'third': '#64CCC5',
+        'white': '#E5E7EB',
+        'black': '#374151',
       },
       fontFamily: {
         'Comfortaa': ['Comfortaa', 'sans-serif'],
