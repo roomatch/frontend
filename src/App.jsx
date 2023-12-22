@@ -1,11 +1,10 @@
 import React from 'react'
 import './globals.css'
 import { Routes, Route } from 'react-router-dom'
-import SignUp from './pages/SignUp'
-import Home from './pages/Home'
-import Nav from './components/Nav'
+import SignUp from './pages/SignUp/SignUp'
+import Nav from './components/Nav/Nav'
 import Search from './pages/Search'
-import Resultados from './pages/Resultados'
+import Resultados from './pages/Resultados/Resultados'
 function App() {
   return (
     <main className='h-screen'>

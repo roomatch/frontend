@@ -1,0 +1,76 @@
+.signup{
+    display: flex; 
+    justify-content: center; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: #E5E7EB; 
+}
+
+.signup__izquierda{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    width: 40%;
+}
+
+.signup__izquierda__bienvenido{
+    margin-bottom: 3rem; 
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    text-align: center; 
+    color: #374151;
+    font-family: 'Comfortaa', 'Sans-Serif';
+}
+
+.signup__izquierda__formulario{
+    display: flex; 
+    flex-direction: column; 
+    gap: 3rem; 
+    align-items: center; 
+    width: 60%;     
+}
+
+.signup__izquierda__formulario__input{
+    transition: border 250ms;
+    background-color: #E5E7EB;
+    border-bottom: solid 3px;
+    border-radius: 3px;
+    border-color: #374151;
+    font-family: 'Comfortaa', 'Sans-Serif';
+    width: 100%;
+    padding: 0 8px 0 8px;
+    text-align: center;
+}
+
+.signup__izquierda__formulario__input:focus{
+    outline: none;
+    border-color: #176B87;
+}
+
+.signup__izquierda__formulario__registro{
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    text-align: center; 
+    color: #374151;    
+    font-family: 'Comfortaa', 'Sans-Serif';
+}
+
+.signup__derecha{
+    display: flex; 
+    z-index: 50; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    background: rgb(4,54,74);
+    background: linear-gradient(144deg, rgba(4,54,74,1) 22%, rgba(23,107,135,1) 100%);
+    width: 60%;  
+    border-radius: 60px 0 0 60px;  
+}
+
+.signup__derecha img {
+    width: 20rem;
+}
+ 

@@ -1,12 +1,13 @@
 import React from 'react'
-import resultados from '../data'
-import Persona from '../components/Persona'
+import resultados from '../../data'
+import Persona from '../../components/Persona'
+import "./Resultados.css"
 
 function Resultados() {
   return (
-    <div className=' bg-white p-20 pl-48 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+    <div className='resultados'>
       {resultados.map((persona, index) => (
-        <div className="" key={index}>
+        <div key={index}>
             <Persona
                 imagen={persona.imagen}
                 nombre={persona.nombre}
