@@ -1,6 +1,6 @@
 import React from 'react'
 import resultados from '../../data'
-import Persona from '../../components/Persona'
+import Persona from '../../components/Persona/Persona'
 import "./Resultados.css"
 
 function Resultados() {

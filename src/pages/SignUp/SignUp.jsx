@@ -1,7 +1,7 @@
 import React from 'react'
 import logo_personas from '../../assets/logo_personas.svg'
 import { Link } from 'react-router-dom'
-import Button from '../../components/Button'
+import Button from '../../components/Button/Button'
 import { motion } from "framer-motion"
 import "./SignUp.css"
 
