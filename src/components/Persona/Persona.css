@@ -1,0 +1,74 @@
+.persona-tarjeta {
+  font-weight: bold;
+  gap: 10px;
+  background-color: #04364A;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  border-radius: 25px ;
+  font-family: 'Comfortaa';
+  }
+
+.persona-tarjeta__descripcion{
+  text-wrap: balance;
+  text-align: center;
+  color: white;
+  padding: 0 4px 0 4px;
+  transition: opacity 0.5s ease-in-out;
+}
+  
+.persona-tarjeta__foto {
+  border-radius: 25px 25px 40px 40px;
+  background-color: #032e3f;
+  object-fit: contain;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.persona-tarjeta__foto > img{
+  width: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: width .3s ease-in-out;
+}
+  
+.persona-tarjeta-titulo {
+  margin-bottom: 1px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.persona-tarjeta__boton {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.persona-tarjeta:hover > .persona-tarjeta__foto {
+  height: 63%;
+}
+
+.persona-tarjeta:hover > .persona-tarjeta__descripcion {
+  display: none;
+  opacity: 0;
+}
+
+.persona-tarjeta:hover > .persona-tarjeta__boton {
+  display: block;
+  scale: 1;
+}
+
+.persona:hover {
+  border: 2px solid #176b87;
+}
+
+.persona:hover > .persona__foto > img {
+  width: 215px;
+}

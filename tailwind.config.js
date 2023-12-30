@@ -10,7 +10,7 @@ export default {
         'primary': '#04364A',
         'secondary': '#176B87',
         'third': '#64CCC5',
-        'white': '#E5E7EB',
+        'white': '#FAFAFA',
         'black': '#374151',
       },
       fontFamily: {

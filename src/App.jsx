@@ -1,18 +1,17 @@
 import React from 'react'
 import './globals.css'
 import { Routes, Route } from 'react-router-dom'
-import SignUp from './pages/SignUp/SignUp'
+import Ingresar from './pages/Ingresar/Ingresar'
 import Nav from './components/Nav/Nav'
-import Search from './pages/Search/Search'
-import Resultados from './pages/Resultados/Resultados'
+import Buscar from './pages/Buscar/Buscar'
+import Landing from './pages/Landing/Landing'
 function App() {
   return (
-    <main className='h-screen'>
+    <main className=''>
       <Routes>
-      <Route path='/buscar' element={<Nav><Search/></Nav>} />
-        <Route path='/inicio' element={<Nav><SignUp/></Nav>} />
-        <Route path='/resultados' element={<Nav><Resultados/></Nav>} />
-        <Route path='/' element={<SignUp/>} />
+        <Route path='/buscar' element={<Nav><Buscar/></Nav>} />
+        <Route path='/ingresar' element={<Ingresar/>} />
+        <Route path='/' element={<Landing/>} />
       </Routes>
     </main>
   )

@@ -1,3 +1,7 @@
+.navbar-contenedor{
+    position: relative;
+}
+
 .navbar{
     z-index: 20;
     display: flex; 
@@ -54,15 +58,4 @@ small{
     flex-direction: column; 
     justify-content: flex-end; 
     height: 20%;
-}
-
-.navbar__logo__link{
-    display: flex; 
-    flex-direction: column; 
-    gap: 0.25rem; 
-    justify-content: center; 
-    align-items: center; 
-    width: 4rem; 
-    height: 4rem; 
-    cursor: pointer;     
 }

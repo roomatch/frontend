@@ -1,0 +1,13 @@
+.boton{
+  background-color: #25272D;
+  border-radius: 10px;
+  color: #FAFAFA;
+  font-family: 'Comfortaa';
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: scale .3s;
+}
+
+.boton:hover{
+  scale: 1.02;
+}
