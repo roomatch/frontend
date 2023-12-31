@@ -12,8 +12,8 @@ function Persona(props) {
         viewport={{ once: false }}
         className='persona-tarjeta'
         >
-            <header className='persona-tarjeta__foto'>
-                <img className="" src={props.imagen} alt="foto de perfil" />
+            <header className='persona-tarjeta__header'>
+                <img className="persona-tarjeta__foto" src={props.imagen} alt="foto de perfil" />
             </header>
             <h1 className="persona-tarjeta-titulo">{props.nombre}</h1>
             <p className='persona-tarjeta__descripcion'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam deleniti suscipit iste  </p>

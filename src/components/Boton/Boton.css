@@ -5,6 +5,7 @@
   font-family: 'Comfortaa';
   font-weight: bold;
   padding: 10px 20px;
+  text-align: center;
   transition: scale .3s;
 }
 
