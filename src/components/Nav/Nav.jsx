@@ -7,7 +7,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { motion } from "framer-motion"
 import "./Nav.css"
 
-const Home = (props) => {
+const Nav = (props) => {
     return (
         <div className="navbar-contenedor">
             <motion.nav
@@ -16,32 +16,38 @@ const Home = (props) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 variants={{
-                    visible: { left: -70 },
+                    visible: { left: -100 },
                     hidden: { left: -50 }
                 }}
                 whileHover={{
                     left: 0,
-                    transition: { duration: 0.2 ,ease: "easeOut" },
+                    transition: { duration: 0.35 ,ease: "easeOut" },
                 }}
                 className='navbar'
             >
                 <div className='navbar__iconos'>
-                    <Link to="/buscar" className="navbar__iconos__boton">
-                        <FaSearch className=''/>
-                        Buscar
-                    </Link>
-                    <Link to="/publicar" className="navbar__iconos__boton">
-                        <FaMapLocationDot className=''/>
-                        Publicar vivienda
-                    </Link>
-                    <Link to="/perfil" className="navbar__iconos__boton">
-                        <MdPersonOutline className=''/>
-                        Perfil
-                    </Link>
+                    <div className='navbar__icono-contenedor'>
+                        <Link to="/buscar" className="navbar__boton">
+                            <FaSearch className='navbar__boton__buscar-icono'/>
+                        </Link>
+                        <h1 className='navbar__texto'>Buscar roomies</h1>
+                    </div>
+                    <div className='navbar__icono-contenedor'>
+                        <Link to="/publicar" className="navbar__boton">
+                            <FaMapLocationDot className='navbar__boton__publicar-icono'/>
+                        </Link>
+                        <h1 className='navbar__texto'>Publicar vivenda</h1>
+                    </div>
+                    <div className='navbar__icono-contenedor'>
+                        <Link to="/perfil" className="navbar__boton">
+                            <MdPersonOutline className='navbar__boton__perfil-icono'/>
+                        </Link>
+                        <h1 className='navbar__texto'>Mi perfil</h1>
+                    </div>
                 </div>
                 
-                <Link to="/" className='navbar__logo'>
-                    <img src={logo_personas} alt="logo de roomatch"/>
+                <Link to="/" className='navbar__logo-contenedor'>
+                    <img className='navbar__logo' src={logo_personas} alt="logo de roomatch"/>
                 </Link>
             </motion.nav>
             {props.children}
@@ -49,4 +55,4 @@ const Home = (props) => {
     )
 }
 
-export default Home
+export default Nav
