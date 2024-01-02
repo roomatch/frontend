@@ -129,7 +129,8 @@
   font-weight: bold;
   padding: 10px 20px;
   text-align: center;
-  transition: outline 0.1s, scale 0.3s; 
+  outline: none;
+  transition: outline 0.1s, scale 0.2s; 
 }
 
 .crear-match__boton:hover{
