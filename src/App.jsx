@@ -5,10 +5,12 @@ import Ingresar from './pages/Ingresar/Ingresar'
 import Nav from './components/Nav/Nav'
 import Buscar from './pages/Buscar/Buscar'
 import Landing from './pages/Landing/Landing'
+import Perfilamiento from './pages/Perfilamiento/Perfilamiento'
 function App() {
   return (
     <main className=''>
       <Routes>
+        <Route path='/perfilamiento' element={<Perfilamiento/>} />
         <Route path='/buscar' element={<Nav><Buscar/></Nav>} />
         <Route path='/ingresar' element={<Ingresar/>} />
         <Route path='/' element={<Landing/>} />
