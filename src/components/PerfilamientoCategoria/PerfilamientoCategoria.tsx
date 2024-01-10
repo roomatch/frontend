@@ -16,10 +16,10 @@ function PerfilamientoCategoria(props) {
 
   const handleAnteriorSeccion = (anteriorSeccionId) => {
     const seccion = document.getElementById(anteriorSeccionId);
-    seccion.scrollIntoView();
+    seccion!.scrollIntoView();
     let barraProgreso = document.getElementById('barra-progreso');
-    let nuevoRight = Number(barraProgreso.style.right.replace("vw", "")) + 25;
-    barraProgreso.style.right = nuevoRight + "vw";
+    let nuevoRight = Number(barraProgreso!.style.right.replace("vw", "")) + 25;
+    barraProgreso!.style.right = nuevoRight + "vw";
   };
 
   const handleSiguienteSeccion = async (siguienteSeccionId, esBotonFinalizar) => {
@@ -27,29 +27,29 @@ function PerfilamientoCategoria(props) {
     let estaRespondida = 0;
     for(let i = 1; i <= 4; i++) {
       let pregunta = document.getElementById(`categoria-${categoriaId}-pregunta-${i}`);
-      pregunta.getAttribute("esta-respondido") === "true" && estaRespondida++;
+      pregunta!.getAttribute("esta-respondido") === "true" && estaRespondida++;
     }
     if(estaRespondida !== 4) {
       let popUpContenedor = document.getElementById('seccion-categoria__popup-contenedor');
-      popUpContenedor.style.display = 'flex';
+      popUpContenedor!.style.display = 'flex';
       await sleep(2000);
-      popUpContenedor.style.display = 'none';
+      popUpContenedor!.style.display = 'none';
       return;
     }
     // Animacion de scroll
     if (!esBotonFinalizar) {
       const seccion = document.getElementById(siguienteSeccionId);
-      seccion.scrollIntoView();
+      seccion!.scrollIntoView();
       let barraProgreso = document.getElementById('barra-progreso');
-      let nuevoRight = Number(barraProgreso.style.right.replace("vw", "")) - 25;
-      barraProgreso.style.right = nuevoRight + "vw";
+      let nuevoRight = Number(barraProgreso!.style.right.replace("vw", "")) - 25;
+      barraProgreso!.style.right = nuevoRight + "vw";
     }
     // Popup de perfilamiento finalizado
     else{
       let popUpContenedor = document.getElementById('seccion-categoria__popup-contenedor--ultima-categoria');
-      popUpContenedor.style.display = 'flex';
+      popUpContenedor!.style.display = 'flex';
       await sleep(2000);
-      popUpContenedor.style.display = 'none';
+      popUpContenedor!.style.display = 'none';
       return;
     }
   };
@@ -74,7 +74,7 @@ function PerfilamientoCategoria(props) {
         <div className='seccion-categoria__flechas-contenedor'>
           {
             !esPrimeraCategoria && (
-              <button onClick={() => handleAnteriorSeccion("perfilamiento__categoria-" + (categoriaId - 1), false)}><FaArrowUp className='seccion-categoria__flecha-icono' /></button>
+              <button onClick={() => handleAnteriorSeccion("perfilamiento__categoria-" + (categoriaId - 1))}><FaArrowUp className='seccion-categoria__flecha-icono' /></button>
             )
           }
           {

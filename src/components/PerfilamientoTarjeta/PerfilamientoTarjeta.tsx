@@ -11,11 +11,11 @@ function PerfilamientoTarjeta(props) {
     if (inputClickeadoId !== opcionSeleccionada) {
       if (opcionSeleccionada !== 0) {
         let inputSeleccionado = document.getElementById(`categoria-${props.idCategoria}-${props.idPregunta}-respuesta-${opcionSeleccionada}`);
-        inputSeleccionado.style.backgroundColor = "transparent";
+        inputSeleccionado!.style.backgroundColor = "transparent";
       }
       setOpcionSeleccionada(inputClickeadoId);
       const inputSeleccionar = document.getElementById(event.target.id);
-      inputSeleccionar.style.backgroundColor = "#FAFAFA";
+      inputSeleccionar!.style.backgroundColor = "#FAFAFA";
     }
 
   }

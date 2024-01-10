@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import resultados from '../../data'
 import Persona from '../../components/Persona/Persona';
-import Boton from '../../components/Boton/Boton';
 
 const Buscar = () => {
 
@@ -27,10 +26,10 @@ const Buscar = () => {
             let marcadoGenero = document.getElementById("marcado-genero");
             setValueGenero(valorSeleccionado);
             if(valorSeleccionado !== "default"){
-                marcadoGenero.style.backgroundColor = "#33ED09";
+                marcadoGenero!.style.backgroundColor = "#33ED09";
             }
             else{
-                marcadoGenero.style.backgroundColor = "gray";
+                marcadoGenero!.style.backgroundColor = "gray";
             }
         }
 
@@ -38,10 +37,10 @@ const Buscar = () => {
             let marcadoEdad = document.getElementById("marcado-edad");
             setValueEdad(valorSeleccionado);
             if(valorSeleccionado !== "default"){
-                marcadoEdad.style.backgroundColor = "#33ED09";
+                marcadoEdad!.style.backgroundColor = "#33ED09";
             }
             else{
-                marcadoEdad.style.backgroundColor = "gray";
+                marcadoEdad!.style.backgroundColor = "gray";
             }
         }
 
@@ -49,10 +48,10 @@ const Buscar = () => {
             let marcadoOcupacion = document.getElementById("marcado-ocupacion");
             setValueOcupacion(valorSeleccionado);
             if(valorSeleccionado !== "default"){
-                marcadoOcupacion.style.backgroundColor = "#33ED09";
+                marcadoOcupacion!.style.backgroundColor = "#33ED09";
             }
             else{
-                marcadoOcupacion.style.backgroundColor = "gray";
+                marcadoOcupacion!.style.backgroundColor = "gray";
             }
         }
 
@@ -60,10 +59,10 @@ const Buscar = () => {
             let marcadoMascotas = document.getElementById("marcado-mascotas");
             setValueMascotas(valorSeleccionado);
             if(valorSeleccionado !== "default") {
-                marcadoMascotas.style.backgroundColor = "#33ED09";
+                marcadoMascotas!.style.backgroundColor = "#33ED09";
             }
             else {
-                marcadoMascotas.style.backgroundColor = "gray";
+                marcadoMascotas!.style.backgroundColor = "gray";
             }
         }
 
@@ -71,10 +70,10 @@ const Buscar = () => {
             let marcadoHabitos = document.getElementById("marcado-habitos");
             setValueHabitos(valorSeleccionado);
             if(valorSeleccionado !== "default") {
-                marcadoHabitos.style.backgroundColor = "#33ED09";
+                marcadoHabitos!.style.backgroundColor = "#33ED09";
             }
             else {
-                marcadoHabitos.style.backgroundColor = "gray";
+                marcadoHabitos!.style.backgroundColor = "gray";
             }
         }
 
@@ -82,10 +81,10 @@ const Buscar = () => {
             let marcadoOrden = document.getElementById("marcado-orden");
             setValueOrden(valorSeleccionado);
             if(valorSeleccionado !== "default") {
-                marcadoOrden.style.backgroundColor = "#33ED09";
+                marcadoOrden!.style.backgroundColor = "#33ED09";
             }
             else {
-                marcadoOrden.style.backgroundColor = "gray";
+                marcadoOrden!.style.backgroundColor = "gray";
             }
         }
 
@@ -93,10 +92,10 @@ const Buscar = () => {
             let marcadoRuido = document.getElementById("marcado-ruido");
             setValueRuido(valorSeleccionado);
             if(valorSeleccionado !== "default") {
-                marcadoRuido.style.backgroundColor = "#33ED09";
+                marcadoRuido!.style.backgroundColor = "#33ED09";
             }
             else {
-                marcadoRuido.style.backgroundColor = "gray";
+                marcadoRuido!.style.backgroundColor = "gray";
             }
         }
 
@@ -104,10 +103,10 @@ const Buscar = () => {
             let marcadoInteraccion = document.getElementById("marcado-interaccion");
             setValueInteraccion(valorSeleccionado);
             if(valorSeleccionado !== "default") {
-                marcadoInteraccion.style.backgroundColor = "#33ED09";
+                marcadoInteraccion!.style.backgroundColor = "#33ED09";
             }
             else {
-                marcadoInteraccion.style.backgroundColor = "gray";
+                marcadoInteraccion!.style.backgroundColor = "gray";
             }
         }
 
@@ -115,10 +114,10 @@ const Buscar = () => {
             let marcadoInvitados = document.getElementById("marcado-invitados");
             setValueInvitados(valorSeleccionado);
             if(valorSeleccionado !== "default") {
-                marcadoInvitados.style.backgroundColor = "#33ED09";
+                marcadoInvitados!.style.backgroundColor = "#33ED09";
             }
             else {
-                marcadoInvitados.style.backgroundColor = "gray";
+                marcadoInvitados!.style.backgroundColor = "gray";
             }
         }
 
@@ -136,15 +135,15 @@ const Buscar = () => {
         let marcadoInteraccion = document.getElementById("marcado-interaccion");
         let marcadoInvitados = document.getElementById("marcado-invitados");
 
-        marcadoGenero.style.backgroundColor = "gray";
-        marcadoEdad.style.backgroundColor = "gray";
-        marcadoOcupacion.style.backgroundColor = "gray";
-        marcadoMascotas.style.backgroundColor = "gray";
-        marcadoHabitos.style.backgroundColor = "gray";
-        marcadoOrden.style.backgroundColor = "gray";
-        marcadoRuido.style.backgroundColor = "gray";
-        marcadoInteraccion.style.backgroundColor = "gray";
-        marcadoInvitados.style.backgroundColor = "gray";
+        marcadoGenero!.style.backgroundColor = "gray";
+        marcadoEdad!.style.backgroundColor = "gray";
+        marcadoOcupacion!.style.backgroundColor = "gray";
+        marcadoMascotas!.style.backgroundColor = "gray";
+        marcadoHabitos!.style.backgroundColor = "gray";
+        marcadoOrden!.style.backgroundColor = "gray";
+        marcadoRuido!.style.backgroundColor = "gray";
+        marcadoInteraccion!.style.backgroundColor = "gray";
+        marcadoInvitados!.style.backgroundColor = "gray";
 
         setValueGenero("default");
         setValueEdad("default");
