@@ -74,12 +74,12 @@ function PerfilamientoCategoria(props) {
         <div className='seccion-categoria__flechas-contenedor'>
           {
             !esPrimeraCategoria && (
-              <a onClick={() => handleAnteriorSeccion("perfilamiento__categoria-" + (categoriaId - 1), false)}><FaArrowUp className='seccion-categoria__flecha-icono' /></a>
+              <button onClick={() => handleAnteriorSeccion("perfilamiento__categoria-" + (categoriaId - 1), false)}><FaArrowUp className='seccion-categoria__flecha-icono' /></button>
             )
           }
           {
             !esUltimaCategoria && (
-              <a onClick={() => handleSiguienteSeccion("perfilamiento__categoria-" + (categoriaId + 1), false)}><FaArrowDown className='seccion-categoria__flecha-icono' /></a>
+              <button onClick={() => handleSiguienteSeccion("perfilamiento__categoria-" + (categoriaId + 1), false)}><FaArrowDown className='seccion-categoria__flecha-icono' /></button>
             )
           }
           {
