@@ -8,10 +8,20 @@ function Perfilamiento() {
   useEffect(() => {
     let barraProgreso = document.getElementById('barra-progreso');
     barraProgreso.style.right = "100vw";
-  }, []); 
+  }, []);
+  
+  const handleTabKeyPress = (event) => {
+    // Verifica si la tecla presionada es Tab (código de tecla: 9)
+    if (event.keyCode === 9 || event.keyCode === 37 || event.keyCode === 38 || event.keyCode === 39 || event.keyCode === 40) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del Tab
+      
+      // Aquí puedes hacer lo que necesites, por ejemplo, mover el foco a otro elemento dentro del componente
+      // Ejemplo: document.getElementById('otroElemento').focus();
+    }
+  };
 
   return (
-    <div className='perfilamiento'>
+    <div className='perfilamiento' onKeyDown={handleTabKeyPress}>
       <div className="barra-progreso" id='barra-progreso'/>
       <PerfilamientoCategoria id='perfilamiento__categoria-1' colorFondo="#79E6F2" />
       <div className='separador'><hr /></div>
