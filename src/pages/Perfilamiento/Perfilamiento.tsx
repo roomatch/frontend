@@ -1,13 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import "./Perfilamiento.css"
-import { FaArrowDown, FaArrowUp } from "react-icons/fa"
 import PerfilamientoCategoria from '../../components/PerfilamientoCategoria/PerfilamientoCategoria';
 
 function Perfilamiento() {
 
   useEffect(() => {
     let barraProgreso = document.getElementById('barra-progreso');
-    barraProgreso.style.right = "100vw";
+    barraProgreso!.style.right = "100vw";
   }, []);
   
   const handleTabKeyPress = (event) => {

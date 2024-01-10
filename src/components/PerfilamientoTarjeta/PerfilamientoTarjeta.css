@@ -48,7 +48,7 @@
     font-weight: bold;
     border-radius: 50%;
     background-color: transparent;
-    transition: border-color .2s, background-color .2s;
+    transition: border-color .2s, background-color .15s;
     -webkit-appearance: none;
 }
 

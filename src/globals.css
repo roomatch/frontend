@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Gabarito&family=Montserrat:wght@400;500;700;900&family=Poppins:wght@400;700&family=Roboto&display=swap');
-
 @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 
 html {
     scroll-behavior: smooth;

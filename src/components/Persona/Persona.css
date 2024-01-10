@@ -34,14 +34,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: height .35s ease-out;
+  transition: height .25s ease-out;
 }
 
 .persona-tarjeta__foto{
   width: 200px;
   border-radius: 50%;
   object-fit: contain;
-  transition: width .35s ease-in-out;
+  transition: width .25s ease-in-out;
 }
   
 .persona-tarjeta-titulo {
