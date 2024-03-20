@@ -1,18 +1,17 @@
 import React from 'react'
 import './globals.css'
 import { Routes, Route } from 'react-router-dom'
+{/*}
 import Ingresar from './pages/Ingresar/Ingresar'
 import Nav from './components/Nav/Nav'
 import Buscar from './pages/Buscar/Buscar'
-import Landing from './pages/Landing/Landing'
 import Perfilamiento from './pages/Perfilamiento/Perfilamiento'
+*/}
+import Landing from './pages/Landing/Landing'
 function App() {
   return (
-    <main className=''>
+    <main>
       <Routes>
-        <Route path='/perfilamiento' element={<Perfilamiento/>} />
-        <Route path='/buscar' element={<Nav><Buscar/></Nav>} />
-        <Route path='/ingresar' element={<Ingresar/>} />
         <Route path='/' element={<Landing/>} />
       </Routes>
     </main>
