@@ -6,6 +6,8 @@
     flex-direction: column;
     gap: 48px;
     padding: 174px 15% 0 15%;
+    justify-content: center;
+    height: 100vh;
 }
 
 .hero__title{
