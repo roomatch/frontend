@@ -1,4 +1,4 @@
-import Button from "@/components/button/Button"
+import Button from "@/components/ui/button/Button"
 import "./NavBar.css"
 import  logo from './assets/logo_personas.svg'
 
@@ -14,7 +14,7 @@ export default function NavBar() {
         <a href='#' className='navbar__link'>Problematica</a>
         <a href='#' className='navbar__link'>Ventajas</a>
         <a href='#' className='navbar__link'>Contacto</a>
-        <Button text='Registrate' />
+        <Button variant='dark' size='small' hRef="#" text="Registrarme"/>
       </div>
     </nav>
   )

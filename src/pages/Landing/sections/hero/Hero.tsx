@@ -1,4 +1,4 @@
-import Button from "@/components/button/Button"
+import Button from "@/components/ui/button/Button"
 import "./Hero.css"
 
 export default function Hero() {
@@ -8,8 +8,8 @@ export default function Hero() {
         En <span className='landing__header__text-highlighted'>Roomatch</span> encuentra tu roomie ideal, <span className='landing__header__text-highlighted'>conecta</span> y <span className='landing__header__text-highlighted'>convive</span>
       </header>
       <div className="landing__buttons-container">
-        <Button text="Registrate como roomie"/>
-        <Button text="Registrate como arrendatario"/>
+        <Button variant='dark' size='regular' hRef="#" text="Registrarme como roomie"/>
+        <Button variant='dark' size='regular' hRef="#" text="Registrarme como arrendatario"/>
       </div>
     </div>
   )
