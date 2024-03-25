@@ -46,7 +46,7 @@ export default function Features() {
             <div className='features__cards-container'>
                 {cards.map((card, index) => {
                     return (
-                        <article className='features__card' id={"features__card-" + index}>
+                        <article className='features__card' id={"features__card-" + index} key={card.title}>
                             <header className='features__card__header'>
                                 {React.createElement(card.icon, { className: 'features__card__icon' })}
                                 <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={card.title}></Text>
