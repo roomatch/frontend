@@ -14,7 +14,7 @@ export default function NavBar() {
         <a href='#' className='navbar__link'>Problematica</a>
         <a href='#' className='navbar__link'>Ventajas</a>
         <a href='#' className='navbar__link'>Contacto</a>
-        <Button variant='dark' size='small' hRef="#" text="Registrarme"/>
+        <Button variant='dark' size='small' hRef="#" text="Registrate"/>
       </div>
     </nav>
   )

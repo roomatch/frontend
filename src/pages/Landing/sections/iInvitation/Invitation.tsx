@@ -1,13 +1,15 @@
 import "./Invitation.css"
 import Button from '@/components/ui/button/Button'
 
+import Text from "../../../../components/ui/text/Text"
+
 export default function Invitation() {
   return (
     <div className='invitation-container' id='invitation'>
-        <h1 className='invitation-title'>¿Estás listo para encontrar tus <span className='landing__header__text-highlighted'>roomies ideales</span>?</h1>
-        <div className="landing__buttons-container">
-        <Button variant='dark' size='regular' hRef="#" text="Registrarme como roomie"/>
-        <Button variant='dark' size='regular' hRef="#" text="Registrarme como arrendatario"/>
+        <Text isTitle={true} textColor="white" highlighted={false} align='center' text='¿Estás listo para encontrar tus roomies ideales?'></Text>
+        <div className="invitation__buttons-container">
+        <Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/>
+        <Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/>
         </div>
     </div>
   )

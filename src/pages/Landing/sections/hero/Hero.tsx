@@ -1,15 +1,15 @@
 import Button from "@/components/ui/button/Button"
 import "./Hero.css"
 
+import Text from "../../../../components/ui/text/Text"
+
 export default function Hero() {
   return (
     <div className='hero-container'>
-      <header className='landing__header'>
-        En <span className='landing__header__text-highlighted'>Roomatch</span> encuentra tu roomie ideal, <span className='landing__header__text-highlighted'>conecta</span> y <span className='landing__header__text-highlighted'>convive</span>
-      </header>
-      <div className="landing__buttons-container">
-        <Button variant='dark' size='regular' hRef="#" text="Registrarme como roomie"/>
-        <Button variant='dark' size='regular' hRef="#" text="Registrarme como arrendatario"/>
+      <Text isTitle={true} align='center' textColor="white" highlighted={false} text='En Roomatch encuentra tu roomie ideal, conecta y convive'></Text>
+      <div className="hero__buttons-container">
+        <Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/>
+        <Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/>
       </div>
     </div>
   )

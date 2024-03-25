@@ -1,0 +1,44 @@
+.title{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-wrap: balance;
+    font-weight: 700;
+}
+
+.subtitle{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-wrap: balance;
+    font-weight: 600;
+}
+
+.paragraph{
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Comfortaa', sans-serif;
+    text-wrap: pretty;
+    font-weight: 400;
+}
+
+.highlighted{
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.white{
+    color: var(--white-color);
+}
+
+.black{
+    color: var(--black-color);
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}

@@ -6,6 +6,8 @@ import HearIcon from "./components/HeartIcon"
 import ListIcon from "./components/ListIcon"
 import MessagesIcon from "./components/MessagesIcon"
 
+import Text from "../../../../components/ui/text/Text"
+
 export default function Features() {
 
     const cards = [
@@ -40,16 +42,16 @@ export default function Features() {
 
     return (
         <div className='features-container'>
-            <h1 className='features__title'>Lo que puedes hacer en <span className='landing__header__text-highlighted'>Roomatch</span></h1>
+            <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch'></Text>
             <div className='features__cards-container'>
                 {cards.map((card, index) => {
                     return (
                         <article className='features__card' id={"features__card-" + index}>
                             <header className='features__card__header'>
                                 {React.createElement(card.icon, { className: 'features__card__icon' })}
-                                {card.title}
+                                <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={card.title}></Text>
                             </header>
-                            <p className='features__card__paragraph'>{card.paragraph}</p>
+                            <Text isParagraph={true} textColor="white" highlighted={false} align='left' text={card.paragraph}></Text>
                             <div className='features__card__image'></div>
                         </article>
                     )
