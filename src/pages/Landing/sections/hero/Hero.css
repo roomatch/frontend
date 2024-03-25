@@ -1,0 +1,10 @@
+.hero-container{
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px;
+    background-image: radial-gradient(49% 81% at 50% 5%, #04364A 0%, #25272D 100%),linear-gradient(0deg, #25272D 0%, #04364A 100%);
+    display: flex;
+    padding-top: 222px;
+    flex-direction: column;
+    gap: 48px;
+    padding: 222 15% 0 15%;
+}

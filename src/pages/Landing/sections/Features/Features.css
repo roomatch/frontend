@@ -1,0 +1,139 @@
+.features-container {
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 90px 15%;
+}
+
+.features__title {
+    color: var(--white-color);
+    font-family: 'Poppins';
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+}
+
+
+.features__card {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 24px;
+}
+
+.features__card__header {
+    align-items: start;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-weight: 700;
+    gap: 4px;
+    line-height: 36px;
+    text-wrap: balance;
+}
+
+.features__card__logo {
+    margin-top: 6px;
+    width: 30px;
+}
+
+.features__card__paragraph {
+    font-family: 'Comfortaa';
+    font-size: 24px;
+    line-height: 24px;
+    text-wrap: pretty;
+}
+
+.features__card__image {
+    background-color: var(--white-color);
+    border-radius: 18px;
+    flex-grow: 1;
+    height: 176px;
+    width: 100%;
+}
+
+.features__cards-container {
+    display: grid;
+    grid-auto-rows: auto auto;
+    grid-gap: 28px;
+    grid-template-areas:
+        "card-0 card-0 card-0 card-1"
+        "card-2 card-2 card-3 card-3";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#features__card-0 {
+    background-image: radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%), radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%), radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%);
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-size: 100% 100%;
+    border-radius: 36px;
+    border: 1px solid rgba(23,107,135,0.3);
+    grid-area: card-0;
+    transition: all 0.3s ease;
+}
+
+#features__card-0:hover {
+    border-color: var(--secondary-color);
+    border-color: white;
+    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
+    filter: brightness(1.1);
+    scale: 1.01;
+}
+
+#features__card-1 {
+    background-image: radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%), radial-gradient(113% 91% at 17% -2%, #25272D 0%, #FF000000 99%), radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%), radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%);
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-size: 100% 100%;
+    border-radius: 36px;
+    border: 1px solid rgba(23,107,135,0.3);
+    grid-area: card-1;
+    transition: all 0.3s ease;   
+}
+
+#features__card-1:hover {
+    border-color: var(--secondary-color);
+    border-color: white;
+    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
+    filter: brightness(1.1);
+    scale: 1.01;
+}
+
+#features__card-2 {
+    background-image: radial-gradient(113% 91% at 17% -2%, #25272D 0%, #FF000000 99%), radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%), linear-gradient(313deg, #04364A 0%, #25272D 100%), radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%);
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-size: 100% 100%;
+    border-radius: 36px;
+    border: 1px solid rgba(23,107,135,0.3);
+    grid-area: card-2;
+    transition: all 0.3s ease;
+}
+
+#features__card-2:hover {
+    border-color: var(--secondary-color);
+    border-color: white;
+    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
+    filter: brightness(1.1);
+    scale: 1.01;
+}
+
+#features__card-3 {
+    background-image: radial-gradient(113% 91% at 17% -2%, #25272D 0%, #FF000000 99%), radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%), radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%), radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%);
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-size: 100% 100%;
+    border-radius: 36px;
+    border: 1px solid rgba(23,107,135,0.3);
+    grid-area: card-3;
+    transition: all 0.3s ease;
+}
+
+#features__card-3:hover {
+    border-color: var(--secondary-color);
+    border-color: white;
+    box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
+    filter: brightness(1.1);
+    scale: 1.01;
+}
