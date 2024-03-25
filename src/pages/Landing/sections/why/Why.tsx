@@ -50,19 +50,19 @@ export default function Why() {
   ]
   return (
     <div className='why-container'>
-        <Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?'></Text>
-        {reasons.map((reason, index) => {
-                    return (
-                        <div key={reason.title} className='why__reason' id={'why__reason-' + (index+1)}>
-                          <div id={'why__reason-' + (index+1) + '__degrade'}/>
-                          <div className='why__reason__text'>
-                            <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={ index+1 + '. '+ reason.title}></Text>
-                            <Text isParagraph={true} textColor="white" highlighted={false} align='left' text={ reason.description }></Text>
-                          </div>
-                          <div className='why__reason__icon'>{React.createElement(reason.icon, { className: 'why__reason__icon' })}</div>
-                        </div>
-                    )
-                })}
+      <Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?'></Text>
+      {reasons.map((reason, index) => {
+        return (
+          <div key={reason.title} className='why__reason' id={'why__reason-' + (index + 1)}>
+            <div id={'why__reason-' + (index + 1) + '__degrade'} />
+            <div className='why__reason__text'>
+              <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={index + 1 + '. ' + reason.title}></Text>
+              <Text isParagraph={true} textColor="white" highlighted={false} align='left' text={reason.description}></Text>
+            </div>
+            <div className='why__reason__icon'>{React.createElement(reason.icon, { className: 'why__reason__icon' })}</div>
+          </div>
+        )
+      })}
     </div>
   )
 }
