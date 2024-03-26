@@ -1,4 +1,5 @@
 import React from "react"
+
 import "./Features.css"
 
 import FilterIcon from "./components/icons/FilterIcon"
@@ -6,7 +7,7 @@ import HearIcon from "./components/icons/HeartIcon"
 import ListIcon from "./components/icons/ListIcon"
 import MessagesIcon from "./components/icons/MessagesIcon"
 
-import Text from "../../../../components/ui/text/Text"
+import Text from "@uiComponents/text/Text"
 
 export default function Features() {
 

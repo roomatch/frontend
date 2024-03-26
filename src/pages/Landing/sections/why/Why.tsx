@@ -2,7 +2,8 @@ import React from 'react';
 
 import './Why.css';
 
-import Text from "../../../../components/ui/text/Text"
+import Text from '@uiComponents/text/Text';
+
 import Connection from './components/icons/Connection';
 import Search from './components/icons/Search';
 import Scan from './components/icons/Scan';

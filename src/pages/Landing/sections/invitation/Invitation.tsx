@@ -1,7 +1,7 @@
 import "./Invitation.css"
-import Button from '@/components/ui/button/Button'
 
-import Text from "../../../../components/ui/text/Text"
+import Button from '@uiComponents/button/Button'
+import Text from "@uiComponents/text/Text"
 
 export default function Invitation() {
   return (

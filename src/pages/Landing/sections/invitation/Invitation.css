@@ -14,14 +14,14 @@
 .invitation__title{
     font-size: 96px;
     line-height: 96px;
-    color: var(--white-color);
+    color: var(--seasalt);
     text-align: center;
     font-family: 'Poppins';
     margin: 0 15%;
 }
 
 .invitation__title--highlighted{
-    color: var(--secondary-color);
+    color: var(--cerulean);
     font-weight: 600;
 }
 

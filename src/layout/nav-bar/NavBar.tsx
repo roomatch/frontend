@@ -1,4 +1,4 @@
-import Button from "@/components/ui/button/Button"
+import Button from "@uiComponents/button/Button"
 import "./NavBar.css"
 import  logo from './assets/logo_personas.svg'
 
@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav className='navbar-container'>
       <div className='navbar__logo-container'>
         <img className='navbar__logo' src={logo} alt="logo de Roomatch" />
-        <p>Roomatch</p>
+        <p>roomatch</p>
       </div>
       <div className='navbar__links-container'>
         <a href='#' className='navbar__link'>Funcionalidades</a>
