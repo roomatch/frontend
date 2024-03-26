@@ -1,5 +1,7 @@
 .why-container{
-    background-color: var(--black-color);
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(30% 30% at 119% 28%, #176B876E 0%, #073AFF00 100%),radial-gradient(30% 30% at -23% 60%, #176B877D 0%, #073AFF00 100%),linear-gradient(180deg, #25272D 0%, #04364A 100%);
     padding: 0 15% 90px 15%;
     display: flex;
     flex-direction: column;
