@@ -1,10 +1,10 @@
 import React from "react"
 import "./Features.css"
 
-import FilterIcon from "./components/FilterIcon"
-import HearIcon from "./components/HeartIcon"
-import ListIcon from "./components/ListIcon"
-import MessagesIcon from "./components/MessagesIcon"
+import FilterIcon from "./components/icons/FilterIcon"
+import HearIcon from "./components/icons/HeartIcon"
+import ListIcon from "./components/icons/ListIcon"
+import MessagesIcon from "./components/icons/MessagesIcon"
 
 import Text from "../../../../components/ui/text/Text"
 
