@@ -6,7 +6,7 @@ import Button from '@uiComponents/button/Button'
 
 export default function Footer() {
   return (
-    <footer className='footer__container'>
+    <footer className='footer__container' id='footer' >
         <div className="footer__logo-container">
             <RoomatchIcon isAnimated={false}/>
             <div className="footer__icons-container">

@@ -42,7 +42,7 @@ export default function Features() {
 
 
     return (
-        <div className='features-container'>
+        <div className='features-container' id="features">
             <div className='features__background' id="features__background-1"/>
             <div className='features__background'id="features__background-2"/>
             <div className='features__background'id="features__background-3"/>

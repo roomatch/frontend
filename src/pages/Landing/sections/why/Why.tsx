@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 import './Why.css';
 
@@ -58,7 +58,7 @@ export default function Why() {
   }, []); 
 
   return (
-    <div className='why-container'>
+    <div className='why-container' id='why'>
       <div ><Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?' className='why__title'/></div>
         <div className="why__reasons-container">
           {reasons.map((reason, index) => {
