@@ -7,6 +7,7 @@ export default defineConfig({
     alias: {
       '@uiComponents': '/src/components/ui',
       '@assets': '/src/assets',
+      '@components': '/src/components',
     },
   },
   plugins: [react()],
