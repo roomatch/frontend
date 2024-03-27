@@ -18,19 +18,6 @@
     box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
-.navbar__logo-container{
-    align-items: center;
-    color: var(--seasalt);
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    justify-content: center;
-}
-
-.navbar__logo{
-    width: 72px;
-}
-
 .navbar__links-container{
     align-items: center;
     color: var(--seasalt);

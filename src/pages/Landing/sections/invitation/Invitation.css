@@ -22,7 +22,7 @@
     background-size: 300%;
     background-position-x: -400vh;
     animation-name: wave;
-    animation-duration: 150s;
+    animation-duration: 200s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
