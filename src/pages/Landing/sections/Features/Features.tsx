@@ -43,7 +43,10 @@ export default function Features() {
 
     return (
         <div className='features-container'>
-            <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch'></Text>
+            <div className='features__background' id="features__background-1"/>
+            <div className='features__background'id="features__background-2"/>
+            <div className='features__background'id="features__background-3"/>
+            <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch' className="features__title"></Text>
             <div className='features__cards-container'>
                 {cards.map((card, index) => {
                     return (

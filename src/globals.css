@@ -58,6 +58,8 @@
 
 .app-container{
 
+  scrollbar-width: none;
+
   --prussian-blue: #04364A;
   --cerulean: #176B87;
   --raisin-black: #25272D;
