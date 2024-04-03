@@ -14,6 +14,7 @@
     scroll-snap-type: y mandatory;
     scrollbar-color: var(--electric-indigo) transparent;
     gap: 48px;
+    scrollbar-width: thin;
 }
 
 .why__title{

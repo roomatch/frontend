@@ -35,6 +35,10 @@
     color: var(--raisin-black);
 }
 
+.purple{
+    color: var(--electric-indigo);
+}
+
 .center{
     text-align: center;
 }
