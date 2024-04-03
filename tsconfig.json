@@ -22,7 +22,9 @@
 
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@uiComponents/*": ["src/components/ui/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
     }
   },
   "include": ["src"],

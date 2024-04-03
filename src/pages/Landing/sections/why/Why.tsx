@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './Why.css';
 
-import Text from "../../../../components/ui/text/Text"
+import Text from '@uiComponents/text/Text';
+
 import Connection from './components/icons/Connection';
 import Search from './components/icons/Search';
 import Scan from './components/icons/Scan';
@@ -48,21 +49,31 @@ export default function Why() {
       "picture": click
     }
   ]
+
+
+
+  useEffect(() => {
+  
+
+  }, []); 
+
   return (
-    <div className='why-container'>
-        <Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?'></Text>
-        {reasons.map((reason, index) => {
-                    return (
-                        <div key={reason.title} className='why__reason' id={'why__reason-' + (index+1)}>
-                          <div id={'why__reason-' + (index+1) + '__degrade'}/>
-                          <div className='why__reason__text'>
-                            <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={ index+1 + '. '+ reason.title}></Text>
-                            <Text isParagraph={true} textColor="white" highlighted={false} align='left' text={ reason.description }></Text>
-                          </div>
-                          <div className='why__reason__icon'>{React.createElement(reason.icon, { className: 'why__reason__icon' })}</div>
-                        </div>
-                    )
-                })}
+    <div className='why-container' id='why'>
+      <div ><Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?' className='why__title'/></div>
+        <div className="why__reasons-container">
+          {reasons.map((reason, index) => {
+            return (
+              <div key={reason.title} className='why__reason' id={'why__reason-' + (index + 1)}>
+                <div id={'why__reason-' + (index + 1) + '__degrade'} />
+                <div className='why__reason__text'>
+                  <Text className='why__reason-title' isSubtitle={true} textColor="white" highlighted={false} align='left' text={index + 1 + '. ' + reason.title}></Text>
+                  <Text className='why__reason-paragraph' isParagraph={true} textColor="white" highlighted={false} align='left' text={reason.description}></Text>
+                </div>
+                <div className='why__reason__icon'>{React.createElement(reason.icon, { className: 'why__reason__icon' })}</div>
+              </div>
+            )
+          })}
+        </div>
     </div>
   )
 }

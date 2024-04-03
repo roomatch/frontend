@@ -1,10 +1,10 @@
 .navbar-container{
     align-items: center;
     backdrop-filter: blur(20px);
-    background-color: var(--primary-color);
+    background-color: var(--prussian-blue);
     background-color:rgba(37, 39, 45, 0.4);
     border-radius: 60px;
-    border: 1px solid var(--white-color);
+    border: 1px solid var(--seasalt);
     display: flex;
     font-family: 'Comfortaa';
     height: 78px;
@@ -15,44 +15,33 @@
     top: 48px;
     width: 70%;
     z-index: 100;
-}
-
-.navbar__logo-container{
-    align-items: center;
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    justify-content: center;
-}
-
-.navbar__logo{
-    width: 72px;
+    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .navbar__links-container{
     align-items: center;
-    color: var(--white-color);
+    color: var(--seasalt);
     display: flex;
     gap: 28px;
     text-decoration: none;
 }
 
 .navbar__button{
-    background-color: var(--primary-color);
+    background-color: var(--prussian-blue);
     border-radius: 10px;
-    border: 1px solid var(--white-color);
+    border: 1px solid var(--seasalt);
     padding: 6px 12px;
 }
 
 .navbar__link{
-    color: var(--white-color);
-    font-weight: 600;
+    color: var(--seasalt);
+    font-weight: 700;
+    font-size: 16px;
     text-decoration: none;
     transition-property: color;
     transition: 0.2s ease;
 }
 
 .navbar__link:hover{
-    color: var(--secondary-color);
+    color: var(--cerulean);
 }

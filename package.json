@@ -13,6 +13,7 @@
     "@fontsource/comfortaa": "^5.0.19",
     "@fontsource/poppins": "^5.0.12",
     "class-variance-authority": "^0.7.0",
+    "framer-motion": "^11.0.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"

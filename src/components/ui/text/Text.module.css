@@ -24,15 +24,19 @@
 
 .highlighted{
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--cerulean);
 }
 
 .white{
-    color: var(--white-color);
+    color: var(--seasalt);
 }
 
 .black{
-    color: var(--black-color);
+    color: var(--raisin-black);
+}
+
+.purple{
+    color: var(--electric-indigo);
 }
 
 .center{

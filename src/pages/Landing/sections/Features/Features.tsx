@@ -1,12 +1,13 @@
 import React from "react"
+
 import "./Features.css"
 
-import FilterIcon from "./components/FilterIcon"
-import HearIcon from "./components/HeartIcon"
-import ListIcon from "./components/ListIcon"
-import MessagesIcon from "./components/MessagesIcon"
+import FilterIcon from "./components/icons/FilterIcon"
+import HearIcon from "./components/icons/HeartIcon"
+import ListIcon from "./components/icons/ListIcon"
+import MessagesIcon from "./components/icons/MessagesIcon"
 
-import Text from "../../../../components/ui/text/Text"
+import Text from "@uiComponents/text/Text"
 
 export default function Features() {
 
@@ -41,8 +42,11 @@ export default function Features() {
 
 
     return (
-        <div className='features-container'>
-            <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch'></Text>
+        <div className='features-container' id="features">
+            <div className='features__background' id="features__background-1"/>
+            <div className='features__background'id="features__background-2"/>
+            <div className='features__background'id="features__background-3"/>
+            <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch' className="features__title"></Text>
             <div className='features__cards-container'>
                 {cards.map((card, index) => {
                     return (

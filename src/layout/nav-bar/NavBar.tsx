@@ -1,20 +1,17 @@
-import Button from "@/components/ui/button/Button"
+import Button from "@uiComponents/button/Button"
 import "./NavBar.css"
-import  logo from './assets/logo_personas.svg'
+import RoomatchIcon from "@components/roomatch-logo/RoomatchLogo"
 
 export default function NavBar() {
   return (
     <nav className='navbar-container'>
-      <div className='navbar__logo-container'>
-        <img className='navbar__logo' src={logo} alt="logo de Roomatch" />
-        <p>Roomatch</p>
-      </div>
+      <RoomatchIcon isAnimated={true}/>
       <div className='navbar__links-container'>
-        <a href='#' className='navbar__link'>Funcionalidades</a>
-        <a href='#' className='navbar__link'>Problematica</a>
-        <a href='#' className='navbar__link'>Ventajas</a>
-        <a href='#' className='navbar__link'>Contacto</a>
-        <Button variant='dark' size='small' hRef="#" text="Registrate"/>
+        <a href='#features' className='navbar__link'>Funcionalidades</a>
+        <a href='#problematic' className='navbar__link'>Problematica</a>
+        <a href='#why' className='navbar__link'>¿Por qué Roomatch?</a>
+        <a href='#footer' className='navbar__link'>Contacto</a>
+        <Button variant='dark' size='small' hRef="#invitation" text="Registrate"/>
       </div>
     </nav>
   )

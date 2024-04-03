@@ -58,9 +58,12 @@
 
 .app-container{
 
-  --primary-color: #04364A;
-  --secondary-color: #176B87;
-  --black-color: #25272D;
-  --white-color: #FAFAFA;
+  --prussian-blue: #04364A;
+  --cerulean: #176B87;
+  --raisin-black: #25272D;
+  --seasalt: #FAFAFA;
+  --electric-indigo: #5928ED;
+
+  overflow: hidden;
 
 }

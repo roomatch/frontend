@@ -21,7 +21,8 @@ const buttonVariants = cva(
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
     hRef?: string,
     target?: string,
-    text: string
+    text: string,
+    type?: 'submit',
 }
 
 export default function Button({ 

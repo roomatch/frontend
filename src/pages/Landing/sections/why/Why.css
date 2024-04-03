@@ -1,19 +1,41 @@
 .why-container{
-    background-color: var(--black-color);
-    padding: 0 15% 90px 15%;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image: radial-gradient(30% 30% at 119% 28%, #176B876E 0%, #073AFF00 100%),radial-gradient(30% 30% at -23% 60%, #176B877D 0%, #073AFF00 100%),linear-gradient(180deg, #25272D 0%, #04364A 100%);
+    padding: 0 0 90px 0;
     display: flex;
     flex-direction: column;
+}
+
+.why__reasons-container{
+    height: 100vh;
+    margin: 0 15%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-color: var(--electric-indigo) transparent;
     gap: 48px;
+    scrollbar-width: thin;
+}
+
+.why__title{
+    padding: 0 15%;
+    margin-bottom: 48px;
 }
 
 .why__reason{
+    margin-top: 48px;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 0 15%;
     position: relative;
+    background-size: 200vh;
+    background-position: center;
+    transition: background-size 0.3s ease;
+    scroll-snap-align: center;
     border-radius: 48px;
+    mask-image: linear-gradient(black 85%, transparent);
 }
 
 .why__reason__text{
@@ -31,91 +53,106 @@
 }
 
 #why__reason-1{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
     background-image: url('./assets/pictures/connection.jpg');
 }
 
 #why__reason-1__degrade{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-size: 100%;
+    background-position: center;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%),radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%),radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%);
     position: absolute;
     z-index: 1;
     opacity: 0.8;
-    border-radius: 48px;
+    
+    transition: all 0.5s ease;
 }
 
 #why__reason-2{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
     background-image: url('./assets/pictures/search.jpg');
 }
 
 #why__reason-2__degrade{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%),radial-gradient(113% 91% at 17% -2%, #25272D 0%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%),radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%);
     position: absolute;
     z-index: 1;
     opacity: 0.8;
-    border-radius: 48px;
+    
 }
 
 #why__reason-3{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
     background-image: url('./assets/pictures/scan.jpg');
 }
 
 #why__reason-3__degrade{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(113% 91% at 17% -2%, #25272D 0%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%),linear-gradient(313deg, #04364A 0%, #25272D 100%),radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%);
     position: absolute;
     z-index: 1;
     opacity: 0.8;
-    border-radius: 48px;
+    
 }
 
 #why__reason-4{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
     background-image: url('./assets/pictures/shield.jpg');
 }
 
 #why__reason-4__degrade{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(113% 91% at 17% -2%, #25272D 0%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%),radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%);
     position: absolute;
     z-index: 1;
     opacity: 0.8;
-    border-radius: 48px;
+    
 }
 
 #why__reason-5{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
     background-image: url('./assets/pictures/click.jpg');
 }
 
 #why__reason-5__degrade{
-    background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%),radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%),radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%);
     position: absolute;
     z-index: 1;
     opacity: 0.8;
-    border-radius: 48px;
+    
 }
+
+.why__reason:hover{
+    background-size: 210vh;
+}
+
+.why__reason-title{
+    transform: translateY(100%);
+    transition: all .3s ease;
+}
+
+.why__reason-paragraph{
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.why__reason:hover .why__reason-title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.why__reason:hover .why__reason-paragraph {
+    opacity: 1;
+}
+

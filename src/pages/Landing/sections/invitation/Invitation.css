@@ -1,0 +1,76 @@
+.invitation-container{
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-color: #25272D;
+    
+}
+
+.invitation__background{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1245' height='149.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%235928ED' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    mix-blend-mode: lighten;
+    background-size: 300%;
+    background-position-x: -400vh;
+    animation-name: wave;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.invitation__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del degradado superior */
+    background: linear-gradient(to bottom, var(--prussian-blue), transparent); /* Degradado que se desvanece hacia abajo */
+}
+
+.invitation__background::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del degradado inferior */
+    background: linear-gradient(to top, var(--raisin-black), transparent); /* Degradado que se desvanece hacia arriba */
+}
+
+@keyframes wave{
+    0%{
+        background-position-x: -400vh;
+    }
+    50%{
+        background-position-x: 400vh;
+    }
+    
+    100%{
+        background-position-x: -400vh;
+    }
+
+}
+
+.invitation__title{
+    mix-blend-mode: difference;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.invitation__buttons-container{
+    z-index: 2;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}

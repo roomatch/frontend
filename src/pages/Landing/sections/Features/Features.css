@@ -1,13 +1,87 @@
 .features-container {
-    background-color: var(--black-color);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--raisin-black);
     display: flex;
     flex-direction: column;
     gap: 48px;
     padding: 90px 15%;
+    animation: gradient 15s ease infinite;
+    inset: 0;
+}
+
+.features__title{
+    z-index: 2;
+}
+
+.features__background{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='1000' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23176B87' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%235928ED'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.features__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del degradado superior */
+    background: linear-gradient(to bottom, var(--raisin-black), transparent); /* Degradado que se desvanece hacia abajo */
+}
+
+.features__background::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del degradado inferior */
+    background: linear-gradient(to top, var(--raisin-black), transparent); /* Degradado que se desvanece hacia arriba */
+}
+
+#features__background-1{
+    background-size: cover;
+    background-position: center;
+    animation-name: alternate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+#features__background-2{
+    animation-name: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+#features__background-3{
+    background-position: center;
+    animation-name: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes alternate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .features__title {
-    color: var(--white-color);
+    color: var(--seasalt);
     font-family: 'Poppins';
     font-size: 96px;
     line-height: 96px;
@@ -16,7 +90,8 @@
 
 
 .features__card {
-    color: var(--white-color);
+    z-index: 2;
+    color: var(--seasalt);
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -25,7 +100,7 @@
 
 .features__card__header {
     align-items: start;
-    color: var(--white-color);
+    color: var(--seasalt);
     display: flex;
     flex-direction: column;
     font-family: 'Poppins';
@@ -49,7 +124,7 @@
 }
 
 .features__card__image {
-    background-color: var(--white-color);
+    background-color: var(--seasalt);
     border-radius: 18px;
     flex-grow: 1;
     height: 176px;
@@ -71,14 +146,13 @@
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background-size: 100% 100%;
     border-radius: 36px;
-    border: 1px solid rgba(23,107,135,0.3);
+    border: 1px solid var(--seasalt);
     grid-area: card-0;
     transition: all 0.3s ease;
 }
 
 #features__card-0:hover {
-    border-color: var(--secondary-color);
-    border-color: white;
+    border-color: var(--cerulean);
     box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
     filter: brightness(1.1);
     scale: 1.01;
@@ -89,14 +163,13 @@
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background-size: 100% 100%;
     border-radius: 36px;
-    border: 1px solid rgba(23,107,135,0.3);
+    border: 1px solid var(--seasalt);
     grid-area: card-1;
     transition: all 0.3s ease;   
 }
 
 #features__card-1:hover {
-    border-color: var(--secondary-color);
-    border-color: white;
+    border-color: var(--cerulean);
     box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
     filter: brightness(1.1);
     scale: 1.01;
@@ -107,14 +180,13 @@
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background-size: 100% 100%;
     border-radius: 36px;
-    border: 1px solid rgba(23,107,135,0.3);
+    border: 1px solid var(--seasalt);
     grid-area: card-2;
     transition: all 0.3s ease;
 }
 
 #features__card-2:hover {
-    border-color: var(--secondary-color);
-    border-color: white;
+    border-color: var(--cerulean);
     box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
     filter: brightness(1.1);
     scale: 1.01;
@@ -125,14 +197,13 @@
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background-size: 100% 100%;
     border-radius: 36px;
-    border: 1px solid rgba(23,107,135,0.3);
+    border: 1px solid var(--seasalt);
     grid-area: card-3;
     transition: all 0.3s ease;
 }
 
 #features__card-3:hover {
-    border-color: var(--secondary-color);
-    border-color: white;
+    border-color: var(--cerulean);
     box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
     filter: brightness(1.1);
     scale: 1.01;

@@ -9,6 +9,7 @@ const textVariants = cva(
             textColor: {
                 white: styles.white,
                 black: styles.black,
+                purple: styles.purple,
             },
             align: {
                 left: styles.left,

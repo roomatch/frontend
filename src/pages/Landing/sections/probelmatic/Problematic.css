@@ -1,0 +1,117 @@
+.problematic-container {
+    background-color: var(--raisin-black);
+    padding: 0 15% 90px 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.problematic__explanation{
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+}
+
+.problematic__explanation-text{
+    line-height: 24px;
+}
+
+.problematic__explanation--expanded{
+    mask-image: none;
+}
+
+.problematic__explanation__long-text{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: max-height 0.5s ease;
+}
+
+.problematic__explanation__long-text--expanded{
+    max-height: 100rem;
+    transition: max-height 0.5s ease;
+}
+
+.problematic__button-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    transition-property: transform, scale;
+}
+
+.problematic__button-container:hover{
+    transform: translateY(4px);
+    scale: 1.1;
+}
+
+.problematic__button-container:hover .problematic__button{
+    animation-name: none;
+}
+
+.problematic__button-container__text{
+    color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.problematic__button-container:hover .problematic__button-container__text{
+    color: var(--seasalt);
+}
+
+.problematic__button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+    animation-name: alternate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes alternate {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.problematic__button--rotated{
+    transform: rotate(-180deg);
+    transition: 0.8s ease;
+}
+
+.problematic__cards-container{
+    gap: 24px;
+    display: flex;
+    width: 100%;
+    padding-bottom: 48px;
+    margin: 0 15%;
+    height: fit-content;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: fit-content;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    scrollbar-color: var(--electric-indigo) transparent;
+}
+
+.problematic__card{
+    scroll-snap-align: center;
+}
+
+
+

@@ -1,6 +1,6 @@
 export default function Click() {
   return (
-<svg xmlns="http://www.w3.org/2000/svg" width={295} height={295} viewBox="0 0 24 24" fill="none" stroke="#176B87" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-click">
+<svg xmlns="http://www.w3.org/2000/svg" width={295} height={295} viewBox="0 0 24 24" fill="none" stroke="#5928ED" strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-click">
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M3 12l3 0" />
   <path d="M12 3l0 3" />

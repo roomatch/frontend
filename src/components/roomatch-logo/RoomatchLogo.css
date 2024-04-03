@@ -1,0 +1,108 @@
+.logo-container--animated{
+    align-items: center;
+    color: var(--seasalt);
+    font-size: 12px;
+    line-height: 12px;
+    justify-content: center;
+    transition: scale 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-container--no-animated{
+    align-items: center;
+    color: var(--seasalt);
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    line-height: 40px;
+    justify-content: center;
+    transition: scale 0.3s ease;
+    text-decoration: none;
+    width: fit-content;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo__logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: scale 0.2s ease;
+}
+
+.logo__separator--animated{
+    height: 0;
+    transition: all 0.3s ease;
+    display: none;
+    animation: appear 0.3s ease;
+    animation-fill-mode:forwards ;
+}
+
+.logo__separator--no-animated{
+    display: none;
+}
+
+@keyframes appear{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 60%;
+    }
+}
+
+.logo-container--animated:hover .logo__logo-container{
+    scale: 1.05;
+}
+
+
+.logo-container--animated:hover .logo__separator--animated{
+    display: block;
+}
+
+.logo-container--animated:hover .logo__slogan--animated{
+    display: block;
+}
+
+.logo__svg{
+    width: 72px;
+    transition: width 0.3s ease;
+}
+
+.logo__slogan--animated{
+    font-family: 'Comfortaa';
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    display: none;
+    animation: leftAppear 0.2s ease;
+}
+
+.logo__slogan--no-animated{
+    font-family: 'Comfortaa';
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    animation: leftAppear 0.2s ease;
+}
+
+@keyframes leftAppear{
+    0%{
+        opacity: 0;
+        transform: translateX(-4px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
