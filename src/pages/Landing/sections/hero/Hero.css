@@ -12,13 +12,20 @@
 }
 
 .hero__title{
-    font-size: 96px;
-    line-height: 96px;
-    padding: 0 15%;
-    font-family: 'Poppins';
-    text-align: center;
-    text-wrap: pretty;
-    color: var(--seasalt);
+    animation-name: downFadeIn;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+
+@keyframes downFadeIn{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .hero__title--highlighted{
@@ -31,4 +38,21 @@
     display: flex;
     justify-content: center;
     gap: 48px;
+    animation-name: downFadeIn;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: .4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downFadeIn{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

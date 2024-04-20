@@ -15,6 +15,26 @@
     mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
 }
 
+@keyframes upDownFadeIn {
+    from {
+        scale: .96;
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.problematic__title{
+    animation: upDownFadeIn ease;
+    animation-timeline: scroll();
+    animation-fill-mode: both;
+    animation-range: entry 1% cover 30%;
+}
+
 .problematic__explanation-text{
     line-height: 24px;
 }

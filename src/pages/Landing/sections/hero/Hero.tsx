@@ -6,7 +6,7 @@ import Text from "@uiComponents/text/Text"
 export default function Hero() {
   return (
     <div className='hero-container' id="hero-container">
-      <Text isTitle={true} align='center' textColor="white" highlighted={false} text='En Roomatch encuentra tu roomie ideal, conecta y convive'></Text>
+      <Text className="hero__title" isTitle={true} align='center' textColor="white" highlighted={false} text='En Roomatch encuentra tu roomie ideal, conecta y convive'></Text>
       <div className="hero__buttons-container">
         <Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/>
         <Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/>

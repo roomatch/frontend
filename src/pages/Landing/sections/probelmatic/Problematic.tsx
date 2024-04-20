@@ -13,7 +13,7 @@ export default function Problematic() {
   return (
     <div className='problematic-container'>
 
-        <Text isTitle={true} text='Lo que nos mueve en Roomatch' textColor='white' align='center'/>
+        <Text className='problematic__title' isTitle={true} text='Lo que nos mueve en Roomatch' textColor='white' align='center'/>
 
         <div className={`problematic__explanation ${isExpanded ? 'problematic__explanation--expanded' : ''}`}>
             <Text className='problematic__explanation-text' isParagraph={true} text='El Laboratorio de Economía de la Educación de la Universidad Javeriana presentó un informe que muestra que de los graduados de bachiller en 2018 y que comenzaron sus estudios universitarios en el 2019, el 72.38% lo hicieron en ciudades distintas a sus ciudades de residencia; Bogotá recibió el 56.79% de aquellos estudiantes y es la única ciudad donde los jóvenes recién graduados del colegio de otras regiones que entran a la universidad son más que los mismos jóvenes locales.' textColor='white' align='center'/>

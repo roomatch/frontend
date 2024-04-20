@@ -67,3 +67,14 @@
   overflow: hidden;
 
 }
+
+.app__navbar{
+  animation: fadeIn linear;
+  animation-timeline: scroll(root);
+}
+
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+

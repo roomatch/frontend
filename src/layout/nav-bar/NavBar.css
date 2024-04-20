@@ -1,10 +1,17 @@
 .navbar-container{
     align-items: center;
     backdrop-filter: blur(20px);
-    background-color: var(--prussian-blue);
     background-color:rgba(37, 39, 45, 0.4);
     border-radius: 60px;
     border: 1px solid var(--seasalt);
+    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.1);
+    
+
+    animation: setNavbarProperties linear;
+    animation-timeline: scroll(block);
+    animation-range: 0 250px;
+    animation-fill-mode: both;
+
     display: flex;
     font-family: 'Comfortaa';
     height: 78px;
@@ -15,7 +22,15 @@
     top: 48px;
     width: 70%;
     z-index: 100;
-    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes setNavbarProperties {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .navbar__links-container{

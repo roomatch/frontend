@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom'
 
 import Landing from './pages/Landing/Landing'
 import NavBar from './layout/nav-bar/NavBar'
-import RoomatchIcon from './components/roomatch-logo/RoomatchLogo';
 
 import '@fontsource/poppins/400.css'; // Regular
 import '@fontsource/poppins/600.css'; // Semibold

@@ -14,6 +14,24 @@
 
 .features__title{
     z-index: 2;
+    animation: upDownFadeIn linear;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: 0 70vh;
+}
+
+
+@keyframes upDownFadeIn {
+    from {
+        scale: .96;
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .features__background{
@@ -73,7 +91,7 @@
         opacity: 0;
     }
     50% {
-        opacity: 0.4;
+        opacity: .3;
     }
     100% {
         opacity: 0;
@@ -141,6 +159,28 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+@keyframes leftRightFadeIn {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }  
+}
+
+@keyframes rightLeftFadeIn {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 #features__card-0 {
     background-image: radial-gradient(142% 91% at 83% 7%, #FF000000 1%, #04364A 100%), radial-gradient(142% 91% at -6% 74%, #25272D 1%, #FF000000 99%), radial-gradient(49% 81% at 45% 47%, #04364A 0%, #25272D 100%);
     background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
@@ -149,6 +189,11 @@
     border: 1px solid var(--seasalt);
     grid-area: card-0;
     transition: all 0.3s ease;
+
+    animation: leftRightFadeIn ease;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: entry 1% cover 10%;
 }
 
 #features__card-0:hover {
@@ -165,7 +210,13 @@
     border-radius: 36px;
     border: 1px solid var(--seasalt);
     grid-area: card-1;
-    transition: all 0.3s ease;   
+    transition: all 0.3s ease;  
+    
+    animation: rightLeftFadeIn ease;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: entry 1% cover 10%;
+
 }
 
 #features__card-1:hover {
@@ -183,6 +234,11 @@
     border: 1px solid var(--seasalt);
     grid-area: card-2;
     transition: all 0.3s ease;
+
+    animation: leftRightFadeIn ease;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: entry 1% cover 30%;
 }
 
 #features__card-2:hover {
@@ -200,6 +256,11 @@
     border: 1px solid var(--seasalt);
     grid-area: card-3;
     transition: all 0.3s ease;
+
+    animation: rightLeftFadeIn ease;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: entry 1% cover 30%;
 }
 
 #features__card-3:hover {

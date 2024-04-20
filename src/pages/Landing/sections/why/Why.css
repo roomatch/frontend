@@ -17,9 +17,28 @@
     scrollbar-width: thin;
 }
 
+@keyframes upDownFadeIn {
+    from {
+        scale: .96;
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .why__title{
     padding: 0 15%;
     margin-bottom: 48px;
+
+    animation: upDownFadeIn ease;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    animation-range: entry 300vh cover 400vh;
+
 }
 
 .why__reason{

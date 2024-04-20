@@ -1,3 +1,14 @@
+@keyframes upDownFadeIn {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .card-container{
     align-items: center;
     display: flex;
@@ -10,20 +21,29 @@
     background-size: 100% 100%;
     background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+
+    animation: upDownFadeIn linear;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+    
 }
 
 .card-container--1{
     background-image: radial-gradient(70% 81% at 51% 8%, #074560FF 1%, #718CF600 95%),linear-gradient(0deg, #04364AFF 1%, #04364AFF 100%);
+    animation-range: entry 200vh cover 220vh;
 }
 
 .card-container--2{
     background: rgb(35,154,194);
 background: radial-gradient(circle, rgba(35,154,194,1) 0%, rgba(23,107,135,1) 100%);
+animation-range: entry 200vh cover 240vh;
 }
 
 .card-container--3{
     background: rgb(151,126,228);
 background: radial-gradient(circle, rgba(151,126,228,1) 0%, rgba(89,40,237,1) 100%);
+animation-range: entry 200vh cover 260vh;
+
 }
 
 .card-container img{
