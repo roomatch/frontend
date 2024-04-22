@@ -69,9 +69,3 @@
 .footer__button{
     cursor: pointer;
 }
-
-.footer__form-message {
-    font-family: 'Poppins';
-    text-wrap: pretty;
-    color: var(--seasalt);
-}
