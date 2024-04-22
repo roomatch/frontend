@@ -1,13 +1,19 @@
 import Button from "@uiComponents/button/Button"
 import "./NavBar.css"
 import RoomatchIcon from "@components/roomatch-logo/RoomatchLogo"
-import { motion, useScroll, useTransform, useViewportScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
 
 export default function NavBar() {
-  const { scrollYProgress } = useScroll()
-  const scale = useTransform(scrollYProgress, [0, .1], [0.8, 1]);
+  const ref = useRef<HTMLElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "90px start"],
+  })
   return (
     <motion.nav
+    ref={ref}
+    style={{opacity: scrollYProgress}}
       className='navbar-container'>
       <RoomatchIcon isAnimated={true}/>
       <div className='navbar__links-container'>

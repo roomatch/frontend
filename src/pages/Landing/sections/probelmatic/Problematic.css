@@ -16,7 +16,7 @@
 }
 
 .problematic__explanation-text{
-    line-height: 24px;
+    line-height: inherit;
 }
 
 .problematic__explanation--expanded{
@@ -72,12 +72,12 @@
     border: none;
     cursor: pointer;
     transition: 0.8s ease;
-    animation-name: alternate;
+    animation-name: alternateButton;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-@keyframes alternate {
+@keyframes alternateButton {
     0% {
         opacity: 0.3;
     }
@@ -90,7 +90,7 @@
 }
 
 .problematic__button--rotated{
-    transform: rotate(-180deg);
+    transform: rotate(-90deg);
     transition: 0.8s ease;
 }
 
@@ -113,5 +113,7 @@
     scroll-snap-align: center;
 }
 
-
+.problematica__scrollable-cards-container{
+    height: 300vh;
+}
 

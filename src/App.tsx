@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom'
 
 import Landing from './pages/Landing/Landing'
 import NavBar from './layout/nav-bar/NavBar'
-import RoomatchIcon from './components/roomatch-logo/RoomatchLogo';
 
 import '@fontsource/poppins/400.css'; // Regular
 import '@fontsource/poppins/600.css'; // Semibold
@@ -13,8 +12,8 @@ import '@fontsource/comfortaa/400.css'; // Regular
 import '@fontsource/comfortaa/600.css'; // Semibold
 import '@fontsource/comfortaa/700.css'; // Bold
 
-
 function App() {
+
   return (
     <main className='app-container'>
       <NavBar />

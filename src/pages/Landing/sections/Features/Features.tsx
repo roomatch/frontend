@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 
 import "./Features.css"
 
@@ -8,6 +8,8 @@ import ListIcon from "./components/icons/ListIcon"
 import MessagesIcon from "./components/icons/MessagesIcon"
 
 import Text from "@uiComponents/text/Text"
+import { motion, useScroll, useTransform } from "framer-motion"
+import FeatureCard from "./components/composited/feature-card/FeatureCard"
 
 export default function Features() {
 
@@ -40,24 +42,34 @@ export default function Features() {
         }
     ]
 
+    const titleRef = useRef<HTMLDivElement>(null)
+
+    const { scrollYProgress } = useScroll({
+        target: titleRef,
+        offset: ["start end", "end 50%"],
+    })
+    const translateYProgress = useTransform(scrollYProgress, [0, 1], ["-80px", "0px"])
 
     return (
         <div className='features-container' id="features">
             <div className='features__background' id="features__background-1"/>
             <div className='features__background'id="features__background-2"/>
             <div className='features__background'id="features__background-3"/>
-            <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch' className="features__title"></Text>
+            <motion.div
+                ref={titleRef}
+                style={{
+                    translateY: translateYProgress,
+                    opacity: scrollYProgress,
+                }}
+                
+                className="features__title"
+            >
+                <Text isTitle={true} textColor="white" highlighted={false} align='center' text='Lo que puedes hacer en Roomatch' className="features__title"></Text>
+            </motion.div>
             <div className='features__cards-container'>
                 {cards.map((card, index) => {
                     return (
-                        <article className='features__card' id={"features__card-" + index} key={card.title}>
-                            <header className='features__card__header'>
-                                {React.createElement(card.icon, { className: 'features__card__icon' })}
-                                <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={card.title}></Text>
-                            </header>
-                            <Text isParagraph={true} textColor="white" highlighted={false} align='left' text={card.paragraph}></Text>
-                            <div className='features__card__image'></div>
-                        </article>
+                        <FeatureCard card={card} index={index} key={index} />
                     )
                 })}
             </div>
