@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     transition: scale 0.2s ease;
+    padding-right: 36px;
 }
 
 .logo__separator--animated{
@@ -67,8 +68,13 @@
     display: block;
 }
 
+.logo-container--animated:hover .logo__logo-container{
+    padding-right: 0;
+}
+
 .logo-container--animated:hover .logo__slogan--animated{
     display: block;
+    padding-right: 36px;
 }
 
 .logo__svg{
@@ -105,4 +111,24 @@
         transform: translateX(0);
     }
     
+}
+
+@media (width <= 880px){
+
+    .logo__separator--animated{
+        animation: none;
+    }
+
+    .logo-container--animated:hover .logo__separator--animated{
+        display: none;
+    }
+    
+    .logo-container--animated:hover .logo__slogan--animated{
+        display: none;
+    }
+
+    .logo-container--animated:hover .logo__logo-container{
+        padding-right: 36px;
+    }
+
 }
