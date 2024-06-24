@@ -50,6 +50,8 @@
 
 .navbar__menu-icon, .navbar__close-menu-icon{
     display: none;
+    border: none;
+    background-color: transparent;
 }
 
 @media (width <= 880px){

@@ -41,12 +41,22 @@ export default function NavBar() {
           <a onClick={handleOnClickInLink} href='#footer' className='navbar__link'>Contacto</a>
           <Button variant='dark' size='small' hRef="#invitation" text="Registrate" />
           <input type="checkbox" id="check" />
-          <button onClick={handleOnClick} className="navbar__menu-icon">
-            <label htmlFor="check" className="navbar__button__label"><MenuIcon /></label>
-          </button>
-          <button onClick={handleOnClick} className="navbar__close-menu-icon">
-            <label htmlFor="check" className="navbar__button__label"><XIcon /></label>
-          </button>
+          <motion.div
+            onClick={handleOnClick} 
+            whileTap={{ scale: 0.9 }}
+          >
+            <button className="navbar__menu-icon" >
+              <label htmlFor="check" className="navbar__button__label"><MenuIcon /></label>
+            </button>
+          </motion.div>
+          <motion.div
+            onClick={handleOnClick}
+            whileTap={{ scale: 0.9 }}
+          >
+            <button className="navbar__close-menu-icon">
+              <label htmlFor="check" className="navbar__button__label"><XIcon /></label>
+            </button>
+          </motion.div>
         </div>
 
       </motion.nav>
