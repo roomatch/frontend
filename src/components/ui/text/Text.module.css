@@ -50,9 +50,11 @@
 @media (width <=768px) {
     .paragraph {
         font-size: 14px;
+        line-height: 14px;
     }
 
     .subtitle {
         font-size: 18px;
+        line-height: 18px;
     }
 }

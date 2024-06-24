@@ -13,6 +13,7 @@
     flex-direction: column;
     gap: 24px;
     mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+    width: 100vw;
 }
 
 .problematic__explanation-text{
@@ -33,7 +34,7 @@
 }
 
 .problematic__explanation__long-text--expanded{
-    max-height: 100rem;
+    max-height: 600rem;
     transition: max-height 0.5s ease;
 }
 
@@ -97,17 +98,19 @@
 .problematic__cards-container{
     gap: 24px;
     display: flex;
-    width: 100%;
+    width: 80vw;
     padding-bottom: 48px;
-    margin: 0 15%;
+    margin: 0 10vw;
     height: fit-content;
     overflow-y: hidden;
     overflow-x: scroll;
     height: fit-content;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     scrollbar-width: thin;
     scrollbar-color: var(--electric-indigo) transparent;
 }
+
+
 
 .problematic__card{
     scroll-snap-align: center;
@@ -117,3 +120,8 @@
     height: 300vh;
 }
 
+@media (width <= 768px){
+    .problematic__explanation{
+        padding: 0 40px;
+    }
+}
