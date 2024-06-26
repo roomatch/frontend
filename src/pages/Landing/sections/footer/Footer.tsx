@@ -8,7 +8,9 @@ export default function Footer() {
   return (
     <footer className='footer__container' id='footer' >
         <div className="footer__logo-container">
-            <RoomatchIcon isAnimated={false}/>
+          <div className="footer__logo-image-container">
+            <RoomatchIcon isAnimated={false} size="small"/>
+            </div>
             <div className="footer__icons-container">
                 <a className='footer__link' href='https://www.instagram.com/roomatch_' target='_blank'><InstagramIcon/></a>
                 <a className='footer__link' href='https://wa.me/573188601654' target='_blank'><WhatsappIcon/></a>
