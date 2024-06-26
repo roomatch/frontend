@@ -6,6 +6,7 @@ import Footer from './sections/footer/Footer'
 import Problematic from './sections/probelmatic/Problematic'
 
 function Home() {
+
   return (
     <div>
       <Hero />

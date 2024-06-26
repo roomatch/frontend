@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Button.module.css';
 
 import { cva, type VariantProps } from "class-variance-authority";
+import { motion } from 'framer-motion';
 
 const buttonVariants = cva(
     styles.base, {
@@ -31,6 +32,21 @@ export default function Button({
     size,
     ...props
 }: ButtonProps) {
-    if(props.hRef) return <a className={buttonVariants({ variant, size, className })} href={props.hRef} target={props.target}>{props.text}</a>
-    else return <button className={buttonVariants({ variant, size, className })} {...props}>{props.text}</button>
+    if (props.hRef) {
+        return (
+            <motion.div
+        whileTap={{ scale: 0.9 }}
+            >
+            <a className={buttonVariants({ variant, size, className })} href={props.hRef} target={props.target}>{props.text}</a>
+            </motion.div>
+        );
+    } else {
+        return (
+            <motion.div
+            whileTap={{ scale: 0.9 }}
+            >
+            <button className={buttonVariants({ variant, size, className })} {...props}>{props.text}</button>
+            </motion.div>
+        );
+    }
 }

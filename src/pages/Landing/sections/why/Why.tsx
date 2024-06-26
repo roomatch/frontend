@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
 
 import './Why.css';
 
@@ -15,6 +15,7 @@ import connection from './assets/pictures/connection.jpg'
 import scan from './assets/pictures/scan.jpg'
 import search from './assets/pictures/search.jpg'
 import shield from './assets/pictures/shield.jpg'
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Why() {
   const reasons = [
@@ -50,17 +51,32 @@ export default function Why() {
     }
   ]
 
-
-
-  useEffect(() => {
-  
-
-  }, []); 
+  const titleRef = useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: titleRef,
+    offset: ["start end", "start 50%"],
+  })
+  const translateYProgress = useTransform(scrollYProgress, [0, 1], ["-80px", "0px"])
+  const opacityProgressForCarrousel = useTransform(scrollYProgress, [0, 1], [-3, 1])
 
   return (
     <div className='why-container' id='why'>
-      <div ><Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?' className='why__title'/></div>
-        <div className="why__reasons-container">
+      <motion.div
+        ref={titleRef}
+        style={{
+          translateY: translateYProgress,
+          opacity: scrollYProgress,
+        }}
+      >
+        <Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?' className='why__title'/>
+      </motion.div>
+        <motion.div 
+        ref={titleRef}
+        style={{
+          opacity: opacityProgressForCarrousel,
+          translateY: translateYProgress,
+        }}
+        className="why__reasons-container">
           {reasons.map((reason, index) => {
             return (
               <div key={reason.title} className='why__reason' id={'why__reason-' + (index + 1)}>
@@ -73,7 +89,7 @@ export default function Why() {
               </div>
             )
           })}
-        </div>
+        </motion.div>
     </div>
   )
 }
