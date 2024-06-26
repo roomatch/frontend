@@ -82,6 +82,41 @@
     transition: width 0.3s ease;
 }
 
+.logo__svg--no-animated{
+    width: 72px;
+    transition: width 0.3s ease;
+}
+
+
+.logo__svg--small{
+    width: 40px;
+    font-size: 18px;
+
+}
+
+.logo__roomatch-text--small{
+    font-size: 18px;
+}
+
+.logo__svg--medium{
+    width: 100px;
+    font-size: 30px;
+}
+
+.logo__roomatch-text--medium{
+    font-size: 30px;
+}
+
+.logo__svg--large{
+    width: 200px;
+    font-size: 70px;
+
+}
+
+.logo__roomatch-text--large{
+    font-size: 70px;
+}
+
 .logo__slogan--animated{
     font-family: 'Comfortaa';
     margin-top: 4px;
