@@ -67,7 +67,6 @@ export default function Invitation() {
 
 
         
-        <Text isTitle={true} textColor="white" highlighted={false} align='center' text='¿Estás listo para encontrar tus roomies ideales?' className="invitation__title"/>
         
 
         <div className="invitation__buttons-container">
