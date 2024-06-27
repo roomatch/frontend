@@ -80,9 +80,9 @@ export default function Problematic() {
         translateY: translateYProgress,
       }}
       className='problematic__cards-container'>
-          <div className='problematic__card'><Card modifier='1' /></div>
-          <div className='problematic__card'><Card modifier='2' /></div>
-          <div className='problematic__card'><Card modifier='3' /></div>
+          <div className='problematic__card'><Card modifier='1' tittle='Bajo costo' content='Arrendar un apartamento puede ser algo muy costoso. Por eso en roomatch te ofrecemos la oportunidad de ahorrar consiguiendo vivienda compartida, la cual es un 64% mas barata' /></div>
+          <div className='problematic__card'><Card modifier='2' tittle= 'No estas solo' content='En Colombia el 57% de los estudiantes universitarios en Bogotá son foreanos, por lo que sabemos que no estas solo y queremos ayudarte a encontrar a gente como tu.' /></div>
+          <div className='problematic__card'><Card modifier='3' tittle='Un hogar lo hace la gente' content='Vivir solo es bueno, pero ¡vivir con amigos es mejor! En una encuesta realizada por la CNN el año 2023 84% de la gente que compartia casa o apartamento con un amigo reporto que sentia que era "mucho mas felíz", por eso, en roomatch queremos lograr que, ademas de un compañero de cuarto, encuentres a un amigo. ' /></div>
         </motion.div>
 
     </div>
