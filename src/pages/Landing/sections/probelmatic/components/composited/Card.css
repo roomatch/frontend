@@ -26,6 +26,13 @@ background: radial-gradient(circle, rgba(35,154,194,1) 0%, rgba(23,107,135,1) 10
 background: radial-gradient(circle, rgba(151,126,228,1) 0%, rgba(89,40,237,1) 100%);
 }
 
+
+.card-container--4{
+    background: rgb(151,126,228);
+background: radial-gradient(circle, rgba(151,126,228,1) 0%, rgb(30, 73, 214) 100%);
+}
+
+
 .card-container img{
     border-radius: 36px;
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
