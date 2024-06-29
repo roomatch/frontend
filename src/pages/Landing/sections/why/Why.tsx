@@ -60,6 +60,18 @@ export default function Why() {
 
   const translateYProgress = useTransform(scrollYProgress, [0, 1], ["-80px", "0px"])
 
+
+  const [textAlign, setTextAlign] = React.useState<"center" | "left" | null | undefined>("left")
+
+  const desktopMediaQuery = window.matchMedia('(max-width: 1200px)')
+  desktopMediaQuery.addEventListener('change', (e) => {
+    if (e.matches) {
+      setTextAlign('center')
+  }else{
+    setTextAlign('left')
+  }
+})
+
   return (
     <div className='why-container' id='why'>
       <motion.div
@@ -78,8 +90,8 @@ export default function Why() {
               <div key={reason.title} className='why__reason' id={'why__reason-' + (index + 1)}>
                 <div id={'why__reason-' + (index + 1) + '__degrade'} />
                 <div className='why__reason__text'>
-                  <Text className='why__reason-title' isSubtitle={true} textColor="white" highlighted={false} align='left' text={index + 1 + '. ' + reason.title}></Text>
-                  <Text className='why__reason-paragraph' isParagraph={true} textColor="white" highlighted={false} align='left' text={reason.description}></Text>
+                  <Text className='why__reason-title' isSubtitle={true} textColor="white" highlighted={false} align={textAlign} text={index + 1 + '. ' + reason.title}></Text>
+                  <Text className='why__reason-paragraph' isParagraph={true} textColor="white" highlighted={false} align={textAlign} text={reason.description}></Text>
                 </div>
                 <div className='why__reason__icon'>{React.createElement(reason.icon, { className: 'why__reason__icon' })}</div>
               </div>

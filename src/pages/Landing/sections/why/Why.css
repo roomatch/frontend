@@ -194,11 +194,11 @@
     }
 
     .why__reason__text{
-        padding: 0 3%;
         width: 80vw;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 20px;
+        padding: 0 16px;
     }
     
     .why__reason__icon{
@@ -231,20 +231,26 @@
     .why__reason{
         padding: 0 0%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border-radius: 18px;
         height: 70vh;
     }
 
     .why__reason__text{
-        padding: 0 5%;
         width: 80vw;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        padding: 0 16px;
     }
     
     .why__reason__icon{
-        width: 40%;   
+        width: 100%;   
+        display: flex;
+        justify-content: center;
     }
 
 }
