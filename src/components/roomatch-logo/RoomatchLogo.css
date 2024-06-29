@@ -1,4 +1,7 @@
 .logo-container--animated{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     align-items: center;
     color: var(--seasalt);
     font-size: 12px;
@@ -15,6 +18,9 @@
 }
 
 .logo-container--no-animated{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     align-items: center;
     color: var(--seasalt);
     display: flex;

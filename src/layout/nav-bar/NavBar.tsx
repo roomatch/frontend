@@ -38,7 +38,7 @@ export default function NavBar() {
         ref={ref}
         style={{ opacity: scrollYProgress }}
         className='navbar-container'>
-        <RoomatchIcon isAnimated={true} />
+        <div onClick={() => navigateToElementById("hero-container")}><RoomatchIcon isAnimated={true} /></div>
 
         <div className='navbar__links-container'>
           <a onClick={() => navigateToElementById("features")}  className='navbar__link'>Funcionalidades</a>
