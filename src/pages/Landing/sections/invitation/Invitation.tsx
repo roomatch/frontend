@@ -48,7 +48,6 @@ export default function Invitation() {
   return (
     <div  className='invitation-container' id='invitation'>
         <div className='invitation__background'/>
-        {/*<Text isTitle={true} textColor="white" highlighted={false} align='center' text='¿Estás listo para encontrar tus roomies ideales?' className="invitation__title"/>*/}
         <motion.div ref={ref} initial="hidden" animate={ isInView ? "visible": "hidden" } transition={{staggerChildren: 0.1}} lang="de" className="invitation__characters-wrapper invitation">
           {
             
@@ -64,10 +63,6 @@ export default function Invitation() {
             ))
           }
         </motion.div>
-
-
-        
-        <Text isTitle={true} textColor="white" highlighted={false} align='center' text='¿Estás listo para encontrar tus roomies ideales?' className="invitation__title"/>
         
 
         <div className="invitation__buttons-container">

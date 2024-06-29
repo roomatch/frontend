@@ -125,13 +125,14 @@
     text-wrap: pretty;
 }
 
-.features__card__image {
-    background-color: var(--seasalt);
+.features__card__image-container {
     border-radius: 18px;
     flex-grow: 1;
     height: 176px;
     width: 100%;
+    object-fit: cover;
 }
+
 
 .features__cards-container {
     width: 90vw;

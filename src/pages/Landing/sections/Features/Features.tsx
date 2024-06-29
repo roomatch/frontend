@@ -11,6 +11,11 @@ import Text from "@uiComponents/text/Text"
 import { motion, useScroll, useTransform } from "framer-motion"
 import FeatureCard from "./components/composited/feature-card/FeatureCard"
 
+import pictureFeature1 from './assets/feature-1.png'
+import pictureFeature2 from './assets/feature-2.png'
+import pictureFeature3 from './assets/feature-3.png'
+import pictureFeature4 from './assets/feature-4.png'
+
 export default function Features() {
 
     const cards = [
@@ -18,26 +23,26 @@ export default function Features() {
             'icon': ListIcon,
             'title': 'Conoce los detalles de los demás',
             'paragraph': 'Revisa la personalidad, hábitos y preferencias de una persona sin necesidad de hablar con ella, también puedes configurar estos aspectos para tu persona, esta es tu oportunidad para mostrarte tal y como eres.',
-            'picture': 'https://wallpaperaccess.com/full/1556608.jpg'
+            'picture': pictureFeature1
         },
         {
             'icon': FilterIcon,
             'title': 'Personaliza tu busqueda',
             'paragraph': 'Encuentra filtros relevantes para tu busqueda de roomies, tú eliges con quien convivir.',
-            'picture': 'https://wallpaperaccess.com/full/1556608.jpg'
+            'picture': pictureFeature2
 
         },
         {
             'icon': MessagesIcon,
             'title': 'Crea chats grupales',
             'paragraph': 'Relacionate con las personas antes de dar el siguiente paso, este es el espacio ideal para conocer a los demás.',
-            'picture': 'https://wallpaperaccess.com/full/1556608.jpg'
+            'picture': pictureFeature3
         },
         {
             'icon': HearIcon,
             'title': 'Lista de favoritos',
             'paragraph': '¿Te preocupa no poder concretar con un grupo? Tranquilo, puedes guardar perfiles interesantes y tener alternativas de roomies.',
-            'picture': 'https://wallpaperaccess.com/full/1556608.jpg'
+            'picture': pictureFeature4
 
         }
     ]

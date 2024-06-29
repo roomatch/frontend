@@ -3,6 +3,9 @@ import React, { useRef } from 'react'
 
 import Text from '@uiComponents/text/Text'
 
+
+
+
 export default function featureCard({ card, index }:any) {
 
     const cardRef = useRef<HTMLElement>(null)
@@ -15,6 +18,7 @@ export default function featureCard({ card, index }:any) {
     const rotate = useTransform(scrollYProgress, [0, 1], [`${index%2 == 0 ? '-' : ''}2deg`, "0deg"])
     const translateX = useTransform(scrollYProgress, [0, 1], [`${index%2 == 0 ? '-' : ''}40px`, "0px"])
     const opacity = useTransform(scrollYProgress, [0, 1], [0.6, 1])
+
 
     return (
         <motion.article
@@ -30,7 +34,8 @@ export default function featureCard({ card, index }:any) {
                 <Text isSubtitle={true} textColor="white" highlighted={false} align='left' text={card.title}></Text>
             </header>
             <Text isParagraph={true} textColor="white" highlighted={false} align='left' text={card.paragraph}></Text>
-            <div className='features__card__image'></div>
+            <img src={card.picture} className='features__card__image-container'/>
+
         </motion.article>
     );
 }
