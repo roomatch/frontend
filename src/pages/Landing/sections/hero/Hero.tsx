@@ -6,10 +6,12 @@ import Text from "@uiComponents/text/Text"
 import { motion } from 'framer-motion';
 
 import heroVideo from './assets/hero-video.mp4'
+import NavBar from "../../../../layout/nav-bar/NavBar";
 
 export default function Hero() {
   return (
     <div className='hero-container' id="hero-container">
+      <NavBar />
       <motion.div
         className="hero__text-container"
         initial={{ opacity: 0, transform: 'translateY(-50px)' }}
