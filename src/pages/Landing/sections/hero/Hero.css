@@ -6,9 +6,11 @@
     flex-direction: column;
     gap: 48px;
     /*padding: 174px 15% 0 15%; Para cuando se ponga la imagen*/
-    padding: 60px 15% 0 15%;
+    padding: 60px 0 0 0;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .hero__title{
@@ -31,4 +33,19 @@
     display: flex;
     justify-content: center;
     gap: 48px;
+}
+
+.hero__text-container{
+    padding: 0 40px;
+    width: 100vw;
+}
+
+@media (width <= 640px){
+    .hero__buttons-container{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
 }

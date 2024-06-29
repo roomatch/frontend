@@ -10,6 +10,7 @@
     padding: 90px 15%;
     animation: gradient 15s ease infinite;
     inset: 0;
+    width: 100vw;
 }
 
 .features__title{
@@ -86,6 +87,7 @@
     font-size: 96px;
     line-height: 96px;
     text-align: center;
+    width: 100vw;
 }
 
 
@@ -132,6 +134,8 @@
 }
 
 .features__cards-container {
+    width: 90vw;
+    padding: 0 5vw;
     display: grid;
     grid-auto-rows: auto auto;
     grid-gap: 28px;
@@ -139,6 +143,7 @@
         "card-0 card-0 card-0 card-1"
         "card-2 card-2 card-3 card-3";
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
 #features__card-0 {
@@ -207,4 +212,12 @@
     box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.7);
     filter: brightness(1.1);
     scale: 1.01;
+}
+
+@media (width <= 640px){
+    .features__cards-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
