@@ -45,7 +45,7 @@ export default function NavBar() {
           <a onClick={() => navigateToElementById("problematic")} className='navbar__link'>Problematica</a>
           <a onClick={() => navigateToElementById("why")}  className='navbar__link'>¿Por qué Roomatch?</a>
           <a onClick={() => navigateToElementById("footer")} className='navbar__link'>Contacto</a>
-          <Button variant='dark' size='small' hRef="#invitation" text="Registrate" />
+          <Button variant='dark' size='small' hRef="/waitlist" text="Registrate" />
           <input type="checkbox" id="check" />
           <motion.div
             onClick={handleOnClick} 

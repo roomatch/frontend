@@ -27,6 +27,14 @@ export default function Hero() {
       className="hero__buttons-container"
       >
         <motion.div
+          initial={{ opacity: 0, transform: 'translateY(-20px)' }}
+          whileInView={{ opacity: 1, transform: 'translateY(0)' }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: 'circIn', delay: 0.3}}
+        >
+          <Button variant='dark' size='regular' hRef="/waitlist" text="Registrate"/>
+        </motion.div>
+        {/* <motion.div
           initial={{ opacity: 0, transform: 'translateX(20px)' }}
           whileInView={{ opacity: 1, transform: 'translateX(0)' }}
           viewport={{ once: true }}
@@ -41,7 +49,7 @@ export default function Hero() {
         transition={{ duration: 1, ease: 'circIn', delay: 0.3}}
       >
         <Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/>
-      </motion.div>
+      </motion.div> */}
       </div>
       <motion.video
         className="hero__video"
