@@ -91,6 +91,16 @@
     cursor: pointer;
 }
 
+.footer__form-label{
+    color: var(--seasalt);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer__button-container{
+    border: none;
+    background-color: transparent;
+}
+
 
 @media(width < 600px ){
 
@@ -126,9 +136,6 @@
         
         
     }
-
-
-
 
     
 }
