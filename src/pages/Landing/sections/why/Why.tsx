@@ -52,12 +52,13 @@ export default function Why() {
   ]
 
   const titleRef = useRef<HTMLDivElement>(null)
+
   const { scrollYProgress } = useScroll({
     target: titleRef,
-    offset: ["start end", "start 50%"],
+    offset: ["start end", "start 60%"],
   })
+
   const translateYProgress = useTransform(scrollYProgress, [0, 1], ["-80px", "0px"])
-  const opacityProgressForCarrousel = useTransform(scrollYProgress, [0, 1], [-3, 1])
 
   return (
     <div className='why-container' id='why'>
@@ -70,12 +71,7 @@ export default function Why() {
       >
         <Text isTitle={true} align='center' textColor="white" highlighted={false} text='¿Por qué encontrar tus roomies en Roomatch?' className='why__title'/>
       </motion.div>
-        <motion.div 
-        ref={titleRef}
-        style={{
-          opacity: opacityProgressForCarrousel,
-          translateY: translateYProgress,
-        }}
+        <div 
         className="why__reasons-container">
           {reasons.map((reason, index) => {
             return (
@@ -89,7 +85,7 @@ export default function Why() {
               </div>
             )
           })}
-        </motion.div>
+        </div>
     </div>
   )
 }

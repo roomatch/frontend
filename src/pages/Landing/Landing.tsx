@@ -1,4 +1,4 @@
-import Features from './sections/Features/Features'
+import Features from './sections/features/Features'
 import Invitation from './sections/invitation/Invitation'
 import Hero from './sections/hero/Hero'
 import Why from './sections/why/Why'
