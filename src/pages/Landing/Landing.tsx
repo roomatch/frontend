@@ -4,6 +4,7 @@ import Hero from './sections/hero/Hero'
 import Why from './sections/why/Why'
 import Footer from './sections/footer/Footer'
 import Problematic from './sections/probelmatic/Problematic'
+import { useRef } from 'react'
 
 function Home() {
 

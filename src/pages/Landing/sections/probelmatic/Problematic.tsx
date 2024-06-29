@@ -4,6 +4,10 @@ import './Problematic.css'
 
 import Text from '@uiComponents/text/Text'
 import ArrowIcon from './components/icons/ArrowIcon'
+import PigIcon from './components/icons/PigIcon'
+import HomeIcon from './components/icons/HomeIcon'
+import FriendsIcon from './components/icons/FriendsIcon'
+import AlternativeIcon from './components/icons/AlternateIcon'
 import Card from './components/composited/Card'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
@@ -27,7 +31,7 @@ export default function Problematic() {
 
 
   return (
-    <div className='problematic-container'>
+    <div className='problematic-container' id='problematic'>
 
       <motion.div
         ref={titleRef}
@@ -80,9 +84,10 @@ export default function Problematic() {
         translateY: translateYProgress,
       }}
       className='problematic__cards-container'>
-          <div className='problematic__card'><Card modifier='1' /></div>
-          <div className='problematic__card'><Card modifier='2' /></div>
-          <div className='problematic__card'><Card modifier='3' /></div>
+          <div className='problematic__card'><Card modifier='1' icon={PigIcon} tittle='Bajo costo' content='Arrendar un apartamento puede ser algo muy costoso. Actualmente en Bogotá el precio promedio de un apartaestudio, sin tener en cuenta otros costos adicionales como administración y amoblado, es de $1.470.000 COP. Es por eso que en Roomatch te ofrecemos la oportunidad de ahorrar consiguiendo vivienda compartida, la cual es un 64% mas barata' /></div>
+          <div className='problematic__card'><Card modifier='2' icon={FriendsIcon} tittle= 'No estas solo' content='Una encuesta de El Tiempo reveló que en Colombia el 57% de los estudiantes universitarios en Bogotá son foraneos, por lo que sabemos que no estas solo y queremos ayudarte a encontrar más gente como tú' /></div>
+          <div className='problematic__card'><Card modifier='3' icon={HomeIcon} tittle='Un hogar lo hace la gente' content='Vivir solo es bueno, pero ¡vivir con amigos es mejor! En una encuesta realizada por la CNN el año 2023 se reveló que el 84% de la gente que compartía casa o apartamento con un amigo reporto que sentia que era "mucho mas felíz", por eso, en Roomatch queremos lograr que, ademas de un compañero de cuarto, encuentres a un amigo' /></div>
+          <div className='problematic__card'><Card modifier='4' icon={AlternativeIcon}  tittle='Otras alternativas' content='La gente actualmente recurre a alternativas como casas familiares o residencias universitarias. En estos lugares la gente se ve obligada a convivir con gente al azar y debe someterse a reglas sobre las que no tiene voz ni voto. Por eso en Roomatch queremos que encuentres personas compatibles con tu estilo de vida que no te resten libertad' /></div>
         </motion.div>
 
     </div>

@@ -25,6 +25,12 @@ export default function NavBar() {
     target: ref,
     offset: ["start start", "90px start"],
   })
+
+  const navigateToElementById = (id: string) => {
+    const elemento = document.getElementById(id); 
+    elemento?.scrollIntoView({behavior:'smooth'});
+  }
+
   return (
 
     <>
@@ -35,10 +41,10 @@ export default function NavBar() {
         <RoomatchIcon isAnimated={true} />
 
         <div className='navbar__links-container'>
-          <a onClick={handleOnClickInLink} href='#features' className='navbar__link'>Funcionalidades</a>
-          <a onClick={handleOnClickInLink} href='#problematic' className='navbar__link'>Problematica</a>
-          <a onClick={handleOnClickInLink} href='#why' className='navbar__link'>¿Por qué Roomatch?</a>
-          <a onClick={handleOnClickInLink} href='#footer' className='navbar__link'>Contacto</a>
+          <a onClick={() => navigateToElementById("features")}  className='navbar__link'>Funcionalidades</a>
+          <a onClick={() => navigateToElementById("problematic")} className='navbar__link'>Problematica</a>
+          <a onClick={() => navigateToElementById("why")}  className='navbar__link'>¿Por qué Roomatch?</a>
+          <a onClick={() => navigateToElementById("footer")} className='navbar__link'>Contacto</a>
           <Button variant='dark' size='small' hRef="#invitation" text="Registrate" />
           <input type="checkbox" id="check" />
           <motion.div

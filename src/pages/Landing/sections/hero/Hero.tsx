@@ -54,6 +54,7 @@ export default function Hero() {
       >
         <source src={heroVideo} type="video/mp4"/>
       </motion.video>
+      </div>
     </div>
   )
 }
