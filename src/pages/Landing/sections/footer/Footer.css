@@ -13,6 +13,23 @@
 }
 
 .footer__logo-container{
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: clamp(16px, 3vw + 1rem, 50px);
+    line-height: clamp(1px, 2vw, 50px);
+    color: var(--seasalt);
+}
+
+.footer__logo-slogan{
+    font-size: clamp(4px, 40%, 20px);
+    line-height: clamp(5px, 1vw + 1rem, 50px);
+}
+
+.footer__logo-svg{
+    width: 300px;
+}
+
+.footer__logo-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,5 +169,11 @@
     .invitation__buttons-container{
         
         flex-direction: row;
+    }
+}
+
+@media (width <= 580px){
+    .footer__logo-container{
+        margin: 0 10px;
     }
 }
