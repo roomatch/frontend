@@ -5,6 +5,7 @@
     background-color:rgba(37, 39, 45, 0.4);
     border-radius: 60px;
     border: 1px solid var(--seasalt);
+    gap: 1rem;
     display: flex;
     font-family: 'Comfortaa';
     height: 78px;
@@ -22,7 +23,6 @@
     align-items: center;
     color: var(--seasalt);
     display: flex;
-    gap: 28px;
     text-decoration: none;
 }
 
@@ -43,6 +43,7 @@
     transition: 0.2s ease;
     text-align: center;
     cursor: pointer;
+    margin-right: 1rem;
 }
 
 .navbar__link:hover{
@@ -61,9 +62,6 @@
         padding: 10px 24px;
     }
 
-    .navbar__links-container{
-        gap: 18px;
-    }
 
     .navbar__link{
         font-size: 14px;
@@ -75,10 +73,6 @@
     .navbar-container{
         margin: 0 20px;
         padding: 10px 16px;
-    }
-
-    .navbar__links-container{
-        gap: 12px;
     }
 
     .navbar__link{
