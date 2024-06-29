@@ -31,7 +31,7 @@ export default function Problematic() {
 
 
   return (
-    <div className='problematic-container'>
+    <div className='problematic-container' id='problematic'>
 
       <motion.div
         ref={titleRef}

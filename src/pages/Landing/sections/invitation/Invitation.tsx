@@ -66,13 +66,12 @@ export default function Invitation() {
         </motion.div>
 
 
-        
-        
 
-        <div className="invitation__buttons-container">
+        {/* {<div className="invitation__buttons-container">
         <motion.div variants={leftButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}} ><Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/></motion.div>
         <motion.div variants={rightButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}}><Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/></motion.div>
-        </div>
+        </div>} */}
+        
     </div>
   )
 }

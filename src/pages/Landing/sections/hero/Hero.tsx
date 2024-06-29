@@ -19,7 +19,7 @@ export default function Hero() {
           <Text isTitle={true} align='center' textColor="white" highlighted={false} text='En Roomatch, encuentra tu roomie ideal, conecta y convive'/>
         
       </motion.div>
-      <div 
+      {/* {<div 
       className="hero__buttons-container"
       >
         <motion.div
@@ -38,7 +38,7 @@ export default function Hero() {
       >
         <Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/>
       </motion.div>
-      </div>
+      </div>} */}
     </div>
   )
 }
