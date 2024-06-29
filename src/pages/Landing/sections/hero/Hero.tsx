@@ -5,6 +5,8 @@ import Text from "@uiComponents/text/Text"
 
 import { motion } from 'framer-motion';
 
+import heroVideo from './assets/hero-video.mp4'
+
 export default function Hero() {
   return (
     <div className='hero-container' id="hero-container">
@@ -19,7 +21,7 @@ export default function Hero() {
           <Text isTitle={true} align='center' textColor="white" highlighted={false} text='En Roomatch, encuentra tu roomie ideal, conecta y convive'/>
         
       </motion.div>
-      {/* {<div 
+      <div 
       className="hero__buttons-container"
       >
         <motion.div
@@ -38,7 +40,21 @@ export default function Hero() {
       >
         <Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/>
       </motion.div>
-      </div>} */}
+      </div>
+      <motion.video
+        className="hero__video"
+        autoPlay
+        loop
+        muted
+        playsInline
+        initial={{ opacity: 0, transform: 'translateY(50px)' }}
+        whileInView={{ opacity: 1, transform: 'translateY(0)' }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: 'circIn', delay: 0.3}}
+      >
+        <source src={heroVideo} type="video/mp4"/>
+      </motion.video>
+      </div>
     </div>
   )
 }

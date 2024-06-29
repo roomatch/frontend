@@ -48,7 +48,6 @@ export default function Invitation() {
   return (
     <div  className='invitation-container' id='invitation'>
         <div className='invitation__background'/>
-        {/*<Text isTitle={true} textColor="white" highlighted={false} align='center' text='¿Estás listo para encontrar tus roomies ideales?' className="invitation__title"/>*/}
         <motion.div ref={ref} initial="hidden" animate={ isInView ? "visible": "hidden" } transition={{staggerChildren: 0.1}} lang="de" className="invitation__characters-wrapper invitation">
           {
             
@@ -65,12 +64,10 @@ export default function Invitation() {
           }
         </motion.div>
 
-
-
-        {/* {<div className="invitation__buttons-container">
-        <motion.div variants={leftButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}} ><Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/></motion.div>
-        <motion.div variants={rightButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}}><Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/></motion.div>
-        </div>} */}
+        <div className="invitation__buttons-container">
+          <motion.div variants={leftButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}} ><Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/></motion.div>
+          <motion.div variants={rightButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}}><Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/></motion.div>
+        </div>
         
     </div>
   )

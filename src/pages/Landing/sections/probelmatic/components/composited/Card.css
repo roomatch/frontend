@@ -34,6 +34,7 @@
 
 
 .card-container img{
+    padding: 0 4rem 1rem 4rem;
     border-radius: 36px;
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
@@ -55,10 +56,14 @@
 }
 
 
+.card__image{
+    object-fit: cover;
+}
+
 
 @media (width <= 768px){
     .card-container{
         width: 70vw;
-        height: 70vh;
+        height: clamp(480px, 3vh + 1rem, 680px);
     }
 }
