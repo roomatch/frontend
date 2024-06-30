@@ -88,3 +88,9 @@
         border-radius: clamp(12px, 1vw + 1rem, 36px);
     }
 }
+
+@media (width>640px) {
+    .hero-container{
+        padding-top: 100px;
+    }
+}
