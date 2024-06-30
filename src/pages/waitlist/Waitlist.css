@@ -103,6 +103,18 @@
     scale: 1.05;
 }
 
+.card__form-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--seasalt);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.card__form-link:hover{
+    color: #219cc5;
+}
+
 .waitlist__footer-link{
     color: #219cc5;
     text-decoration: none;

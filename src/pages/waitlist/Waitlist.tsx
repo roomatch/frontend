@@ -20,6 +20,8 @@ export default function Waitlist() {
                 <Text isSubtitle={true} text='Inscríbete a nuestra lista de espera' />
                 <Text isParagraph={true} text='Te contactaremos pronto para iniciar tu proceso, empezar a conectarte con tus roommies ideales y disfrutar de todos los demás beneficios que tenemos para nuestros primeros usuarios.' />
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWBuqVDA59OZtZX3-efSxPPeFVWaVF2X1ImJkv-KcviBXLwg/viewform?embedded=true" width="100%" height="100%" frameBorder="0">Loading…</iframe>
+                <a href='https://forms.gle/GkiWdnoPGccwr8bd9' target='_blank' className='card__form-link'>Abrir el formulario en una nueva pestaña</a>
+
             </article>
 
             <section className='waitlist__footer'>
