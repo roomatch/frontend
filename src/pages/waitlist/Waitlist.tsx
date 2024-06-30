@@ -29,7 +29,7 @@ export default function Waitlist() {
                 <p>¿Tienes alguna pregunta o comentario? Contáctanos.</p>
                 <div className='waitlist__footer__logos-container'>
                     <a href='https://wa.me/573188601654' target='_blank' className='waitlist__footer__logo-container'><WhatsappIcon /></a>
-                    <a href='https://www.instagram.com/roomatch_' target='_blank' className='waitlist__footer__logo-container'><InstagramIcon /></a>
+                    <a href='https://www.instagram.com/roomatch.me' target='_blank' className='waitlist__footer__logo-container'><InstagramIcon /></a>
                 </div>
             </section>
 

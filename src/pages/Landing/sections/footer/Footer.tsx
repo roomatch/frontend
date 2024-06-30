@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__icons-container">
-          <a className='footer__link' href='https://www.instagram.com/roomatch_' target='_blank'><InstagramIcon /></a>
+          <a className='footer__link' href='https://www.instagram.com/roomatch.me' target='_blank'><InstagramIcon /></a>
           <a className='footer__link' href='https://wa.me/573188601654' target='_blank'><WhatsappIcon /></a>
         </div>
       </div>
