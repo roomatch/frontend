@@ -58,7 +58,7 @@ export default function Why() {
     offset: ["start end", "start 60%"],
   })
 
-  const translateYProgress = useTransform(scrollYProgress, [0, 1], ["-80px", "0px"])
+  const translateYProgress = useTransform(scrollYProgress, [0, 1], ["-60px", "0px"])
 
 
   const [textAlign, setTextAlign] = React.useState<"center" | "left" | null | undefined>("left")

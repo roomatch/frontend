@@ -94,6 +94,7 @@
 @media (width <= 640px){
     .navbar-container{
         width: 80%;
+        padding: 0 24px;
     }
     
     .navbar__link{

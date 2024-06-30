@@ -54,6 +54,7 @@
     scale: 1.1;
 }
 
+
 .problematic__button-container:hover .problematic__button{
     animation-name: none;
 }

@@ -18,6 +18,7 @@
     font-size: clamp(16px, 3vw + 1rem, 50px);
     line-height: clamp(1px, 2vw, 50px);
     color: var(--seasalt);
+    
 }
 
 .footer__logo-slogan{
@@ -190,5 +191,17 @@
 @media (width <= 580px){
     .footer__logo-container{
         margin: 0 10px;
+    }
+
+    .footer__separator{
+        transform: rotate(90deg);
+    }
+
+    .footer__container{
+        height: fit-content;
+        height: 700px;
+        flex-direction: column;
+        gap: 4px;
+        padding: 80px 0 40px 0;
     }
 }

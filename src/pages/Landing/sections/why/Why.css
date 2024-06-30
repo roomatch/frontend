@@ -158,6 +158,16 @@
     opacity: 1;
 }
 
+@media (width <= 640px){
+    .why__reason-paragraph{
+        opacity: 1;
+    }
+
+    .why__reason-title {
+        transform: translateY(0);
+    }
+}
+
 .why__reason:hover .why__reason-paragraph {
     opacity: 1;
 }

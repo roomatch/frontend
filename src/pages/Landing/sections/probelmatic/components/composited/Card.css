@@ -81,3 +81,12 @@ background-image: radial-gradient(49% 81% at 50% 46%, #075978FF 0%, #073AFF00 10
         height: clamp(480px, 3vh + 1rem, 680px);
     }
 }
+
+@media (width <= 768px){
+    .card-container{
+        width: 70vw;
+        height: clamp(480px, 3vh + 1rem, 680px);
+    }
+}
+
+
