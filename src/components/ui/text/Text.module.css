@@ -48,6 +48,12 @@
 }
 
 @media (width <=768px) {
+
+    .title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
     .paragraph {
         font-size: 14px;
         line-height: 14px;
