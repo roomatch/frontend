@@ -48,7 +48,7 @@ export default function Footer() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", import.meta.env.VITE_WEB_3_FORMS_KEY);
+    formData.append("access_key", process.env.VITE_WEB_3_FORMS_KEY || "");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

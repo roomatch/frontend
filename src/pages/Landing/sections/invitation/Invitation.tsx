@@ -1,8 +1,7 @@
 import "./Invitation.css"
 
 import Button from '@uiComponents/button/Button'
-import Text from "@uiComponents/text/Text"
-import { motion, useInView, useScroll, useTransform } from "framer-motion"
+import { motion, useInView} from "framer-motion"
 import { useRef } from "react"
 
 export default function Invitation() {
@@ -23,27 +22,27 @@ export default function Invitation() {
     },
   }
 
-  const leftButtonAnimations = {
-    hidden: {
-      opacity: 0,
-      x: "5px"
-    },
-    visible: {
-      opacity: 1,
-      x: "0px",
-    },
-  }
+  // const leftButtonAnimations = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: "5px"
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: "0px",
+  //   },
+  // }
 
-  const rightButtonAnimations = {
-    hidden: {
-      opacity: 0,
-      x: "-5px"
-    },
-    visible: {
-      opacity: 1,
-      x: "0px",
-    },
-  }
+  // const rightButtonAnimations = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: "-5px"
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: "0px",
+  //   },
+  // }
 
   return (
     <div  className='invitation-container' id='invitation'>
