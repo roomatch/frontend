@@ -1,6 +1,6 @@
 import { useRef } from "react"
 
-import "./Features.css"
+import "./Functionalities.css"
 
 import FilterIcon from "./components/icons/FilterIcon"
 import HearIcon from "./components/icons/HeartIcon"
@@ -16,7 +16,7 @@ import pictureFeature2 from './assets/feature-2.png'
 import pictureFeature3 from './assets/feature-3.png'
 import pictureFeature4 from './assets/feature-4.png'
 
-export default function Features() {
+export default function Functionalities() {
 
     const cards = [
         {

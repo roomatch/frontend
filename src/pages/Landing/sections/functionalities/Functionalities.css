@@ -81,14 +81,6 @@
     }
 }
 
-.features__title {
-    color: var(--seasalt);
-    font-family: 'Poppins';
-    font-size: 96px;
-    line-height: 96px;
-    text-align: center;
-    width: 100vw;
-}
 
 
 .features__card {
