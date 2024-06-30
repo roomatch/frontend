@@ -22,13 +22,13 @@ export default function Functionalities() {
         {
             'icon': ListIcon,
             'title': 'Conoce los detalles de los demás',
-            'paragraph': 'Revisa la personalidad, hábitos y preferencias de una persona sin necesidad de hablar con ella, también puedes configurar estos aspectos para tu persona, esta es tu oportunidad para mostrarte tal y como eres.',
+            'paragraph': 'Revisa la personalidad, hábitos y preferencias de una persona sin necesidad de hablar con ella. También puedes configurar estos aspectos para tu persona, esta es tu oportunidad para mostrarte tal y como eres.',
             'picture': pictureFeature1
         },
         {
             'icon': FilterIcon,
             'title': 'Personaliza tu busqueda',
-            'paragraph': 'Encuentra filtros relevantes para tu busqueda de roomies, tú eliges con quien convivir.',
+            'paragraph': 'Encuentra filtros relevantes para tu busqueda de roomies, tú eliges con quién convivir.',
             'picture': pictureFeature2
 
         },

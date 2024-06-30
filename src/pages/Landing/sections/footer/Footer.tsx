@@ -87,7 +87,7 @@ export default function Footer() {
         <label className='footer__form-label'>Correo</label>
         <input className='footer__input' type="email" name="email" required placeholder='Escribe tu correo...'/>
         <label className='footer__form-label'>Mensaje</label>
-        <textarea className='footer__input' name="message" required placeholder='Escribe tu mensaje...'></textarea>
+        <textarea className='footer__input footer__input--text_area' name="message" required placeholder='Escribe tu mensaje...'></textarea>
         <button onClick={loading} type="submit" className='footer__button-container'><Button variant={'light'} size={'small'} type='submit' text='Enviar' className='footer__button' /></button>
       </form>
       <ToastContainer

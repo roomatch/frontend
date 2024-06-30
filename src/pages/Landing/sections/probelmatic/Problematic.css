@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 48px;
     align-items: center;
+    height: 100%;
 }
 
 .problematic__explanation{
@@ -123,5 +124,9 @@
 @media (width <= 768px){
     .problematic__explanation{
         padding: 0 40px;
+    }
+
+    .problematic-container{
+        padding-bottom: 30px;
     }
 }
