@@ -70,7 +70,7 @@ export default function Invitation() {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: 'circIn', delay: 0.3}}
         >
-          <Button variant='dark' size='regular' hRef="/waitlist" text="Registrate"/>
+          <Button variant='dark' size='small' hRef="/waitlist" withReactRouter={true} text="Registrate"/>
         </motion.div>
           {/* <motion.div variants={leftButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}} ><Button variant='dark' size='regular' hRef="#" text="Registrate como roomie"/></motion.div>
           <motion.div variants={rightButtonAnimations} initial="hidden" animate={ isInView ? "visible" : "hidden" } transition={{delay: 1, duration: 0.8}}><Button variant='dark' size='regular' hRef="#" text="Registrate como arrendatario"/></motion.div> */}

@@ -3,6 +3,7 @@ import styles from './Button.module.css';
 
 import { cva, type VariantProps } from "class-variance-authority";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const buttonVariants = cva(
     styles.base, {
@@ -24,6 +25,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     target?: string,
     text: string,
     type?: 'submit',
+    withReactRouter?: boolean,
 }
 
 export default function Button({ 
@@ -33,13 +35,25 @@ export default function Button({
     ...props
 }: ButtonProps) {
     if (props.hRef) {
-        return (
-            <motion.div
-        whileTap={{ scale: 0.9 }}
-            >
-            <a className={buttonVariants({ variant, size, className })} href={props.hRef} target={props.target}>{props.text}</a>
-            </motion.div>
-        );
+        if (props.withReactRouter) {
+            return (
+                <motion.div
+                whileTap={{ scale: 0.9 }}
+                >
+                <Link to={props.hRef} className={buttonVariants({ variant, size, className })} target={props.target}>
+                    {props.text}
+                </Link>
+                </motion.div>
+            );
+        }else{
+            return (
+                <motion.div
+                whileTap={{ scale: 0.9 }}
+                >
+                <a className={buttonVariants({ variant, size, className })} href={props.hRef} target={props.target}>{props.text}</a>
+                </motion.div>
+            );
+        }
     } else {
         return (
             <motion.div

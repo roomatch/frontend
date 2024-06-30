@@ -5,7 +5,6 @@ import { motion, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
 import MenuIcon from "./components/icons/MenuIcon";
 import XIcon from "./components/icons/XIcon";
-import { Link } from "react-router-dom";
 
 export default function NavBar() {
 
@@ -46,7 +45,7 @@ export default function NavBar() {
           <a onClick={() => navigateToElementById("problematic")} className='navbar__link'>Problematica</a>
           <a onClick={() => navigateToElementById("why")}  className='navbar__link'>¿Por qué Roomatch?</a>
           <a onClick={() => navigateToElementById("footer")} className='navbar__link'>Contacto</a>
-          <Link to="/waitlist"><Button variant='dark' size='small' text="Registrate" /></Link>
+          <Button variant='dark' size='small' text="Registrate" hRef="/waitlist" withReactRouter={true} />
           <input type="checkbox" id="check" />
           <motion.div
             onClick={handleOnClick} 
