@@ -7,8 +7,16 @@ import { motion } from 'framer-motion';
 
 import heroVideo from './assets/hero-video.mp4'
 import NavBar from "../../../../layout/nav-bar/NavBar";
+import ArrowIcon from "../probelmatic/components/icons/ArrowIcon";
 
 export default function Hero() {
+
+
+  const navigateToElementById = (id: string) => {
+    const elemento = document.getElementById(id); 
+    elemento?.scrollIntoView({behavior:'smooth'});
+  }
+
   return (
     <div className='hero-container' id="hero-container">
       <NavBar />
@@ -64,6 +72,7 @@ export default function Hero() {
       >
         <source src={heroVideo} type="video/mp4"/>
       </motion.video>
+      <div className="hero__arrow-icon" onClick={() => navigateToElementById("features")}><ArrowIcon /></div>
       </div>
   )
 }
