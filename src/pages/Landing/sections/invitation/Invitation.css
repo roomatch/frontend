@@ -107,6 +107,11 @@
     .invitation__buttons-container{
         gap:24px
     }
+
+    .invitation__background{
+        
+        animation-iteration-count: 0;
+    }
     
 }
 
